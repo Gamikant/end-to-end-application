@@ -1,0 +1,65 @@
+/* Add to src/styles.css */
+.trainable-model {
+    border-top: 4px solid #10b981;
+  }
+  
+  .file-group {
+    margin: 1rem 0;
+  }
+  
+  .file-info {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #64748b;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .metrics {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 1rem 0;
+  }
+  
+  .metric-card {
+    background: var(--background);
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .metric-card .value {
+    font-weight: 600;
+    color: var(--secondary);
+    font-size: 1.25rem;
+  }
+  
+  button {
+    transition: opacity 0.2s;
+  }
+  
+  button:disabled {
+    background: #9ca3af;
+  }
+  
+
+/* Add to src/styles.css */
+.classification {
+    border-left: 4px solid #2563eb;
+  }
+  
+  .regression {
+    border-left: 4px solid #f59e0b;
+  }
+  
+  .trainable {
+    border-left: 4px solid #10b981;
+  }
+  
+  .model-spec h3 {
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  

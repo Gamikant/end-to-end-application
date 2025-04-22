@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  spark:
+    image: bitnami/spark:3.3
+    ports:
+      - '7077:7077'
+      - '8080:8080'
+    volumes:
+      - ./data:/data
+
+  mlflow:
+    image: mlflow:latest
+    ports:
+      - '5000:5000'
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+      - MLFLOW_ARTIFACT_ROOT=/mlflow
+
+  mongodb:
+    image: mongo:6.0
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
