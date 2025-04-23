@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/8ea383d9ce5d458596091dda27998b58/artifacts
+end_time: 1745424492424
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 8ea383d9ce5d458596091dda27998b58
+run_name: adaptable-lamb-595
+run_uuid: 8ea383d9ce5d458596091dda27998b58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745424356309
+status: 3
+tags: []
+user_id: prana
