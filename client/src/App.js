@@ -1,28 +1,15 @@
-// src/components/Home.js
-import React from 'react';
-import LeftModel from './LeftModel';
-import RightModel from './RightModel';
-import ModelDetails from './ModelDetails';
+// src/App.js
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import ModelSpecs from './components/ModelSpecs';
 
-const Home = () => {
+function App() {
   return (
-    <div className="container">
-      <div className="header">
-        <h1>ML Model Platform</h1>
-        <nav>
-          <a href="#model-details">Model Details</a>
-          <a href="/login">Admin Login</a>
-        </nav>
-      </div>
-
-      <div className="model-grid">
-        <LeftModel />
-        <RightModel />
-      </div>
-
-      <ModelDetails />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/specs" element={<ModelSpecs />} />
+    </Routes>
   );
-};
+}
 
-export default Home;
+export default App;

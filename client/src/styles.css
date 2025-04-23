@@ -1,65 +1,281 @@
-/* Add to src/styles.css */
-.trainable-model {
-    border-top: 4px solid #10b981;
+/* src/styles.css */
+:root {
+  --primary: #4f46e5;  /* Indigo */
+  --secondary: #1e40af; /* Dark blue */
+  --accent: #10b981;   /* Emerald */
+  --background: #f8fafc; /* Light gray-blue */
+  --card-bg: #ffffff;
+  --text: #1e293b;     /* Dark gray-blue */
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 6px;
+}
+
+.nav-btn:hover {
+  background: var(--background);
+}
+
+/* Model Grid */
+.model-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+/* Model Section */
+.model-section {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid var(--primary);
+}
+
+.model-section:nth-child(2) {
+  border-color: var(--accent);
+}
+
+/* Model Header */
+.model-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.model-header h2 {
+  font-size: 1.4rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.spec-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+.spec-btn:hover {
+  opacity: 0.9;
+}
+
+/* Model Description */
+.model-description {
+  color: #64748b;
+  margin: 1rem 0 1.5rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* File Upload Section */
+.file-upload {
+  margin: 1.5rem 0;
+  border: 2px dashed #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.file-upload:hover {
+  border-color: var(--primary);
+}
+
+.file-upload label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.file-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #64748b;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  transition: all 0.2s;
+  margin: 0.5rem 0;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Results Section */
+.results {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--background);
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.metrics {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin: 1.5rem 0;
+}
+
+.metric-card {
+  text-align: center;
+  padding: 1.2rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.metric-card .value {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 0.5rem;
+}
+
+/* Model Specs Page */
+.specs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.specs-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.spec-card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid var(--primary);
+}
+
+.spec-card h3 {
+  margin-top: 0;
+  color: var(--secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .model-grid {
+    grid-template-columns: 1fr;
   }
   
-  .file-group {
-    margin: 1rem 0;
-  }
-  
-  .file-info {
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
-    color: #64748b;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .metrics {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    margin: 1rem 0;
-  }
-  
-  .metric-card {
-    background: var(--background);
-    padding: 1rem;
-    border-radius: 4px;
+  .header {
+    flex-direction: column;
     text-align: center;
   }
   
-  .metric-card .value {
-    font-weight: 600;
-    color: var(--secondary);
-    font-size: 1.25rem;
+  .nav-btn {
+    margin: 0.5rem;
   }
   
-  button {
-    transition: opacity 0.2s;
+  .model-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
   
-  button:disabled {
-    background: #9ca3af;
+  .spec-btn {
+    margin-top: 1rem;
+    width: 100%;
   }
-  
+}
 
-/* Add to src/styles.css */
-.classification {
-    border-left: 4px solid #2563eb;
-  }
-  
-  .regression {
-    border-left: 4px solid #f59e0b;
-  }
-  
-  .trainable {
-    border-left: 4px solid #10b981;
-  }
-  
-  .model-spec h3 {
-    margin: 0 0 1rem 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.model-section:hover {
+  animation: pulse 1s ease-in-out;
+}

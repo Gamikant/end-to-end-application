@@ -8,3 +8,5 @@
 [2025-04-22T21:58:53.504Z] GET /predict - ::ffff:127.0.0.1 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0
 
 [2025-04-22T21:59:13.126Z] GET /train-predict - ::ffff:127.0.0.1 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0
+
+[2025-04-23T03:42:51.821Z] GET / - ::ffff:127.0.0.1 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0
