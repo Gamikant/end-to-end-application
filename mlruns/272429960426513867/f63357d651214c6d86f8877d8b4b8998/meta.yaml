@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/f63357d651214c6d86f8877d8b4b8998/artifacts
+end_time: 1745507755237
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: f63357d651214c6d86f8877d8b4b8998
+run_name: shivering-slug-31
+run_uuid: f63357d651214c6d86f8877d8b4b8998
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745507574061
+status: 3
+tags: []
+user_id: prana

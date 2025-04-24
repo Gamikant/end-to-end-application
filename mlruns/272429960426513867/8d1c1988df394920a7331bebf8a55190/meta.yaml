@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/8d1c1988df394920a7331bebf8a55190/artifacts
+end_time: 1745501726532
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 8d1c1988df394920a7331bebf8a55190
+run_name: peaceful-perch-137
+run_uuid: 8d1c1988df394920a7331bebf8a55190
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745501542009
+status: 4
+tags: []
+user_id: prana

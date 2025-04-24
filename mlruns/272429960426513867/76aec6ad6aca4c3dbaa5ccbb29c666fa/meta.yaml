@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/76aec6ad6aca4c3dbaa5ccbb29c666fa/artifacts
+end_time: 1745500908922
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 76aec6ad6aca4c3dbaa5ccbb29c666fa
+run_name: efficient-cat-903
+run_uuid: 76aec6ad6aca4c3dbaa5ccbb29c666fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745500739482
+status: 4
+tags: []
+user_id: prana

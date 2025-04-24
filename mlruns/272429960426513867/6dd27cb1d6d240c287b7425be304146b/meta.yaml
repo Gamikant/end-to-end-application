@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/6dd27cb1d6d240c287b7425be304146b/artifacts
+end_time: 1745507077592
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 6dd27cb1d6d240c287b7425be304146b
+run_name: awesome-sloth-637
+run_uuid: 6dd27cb1d6d240c287b7425be304146b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745507004083
+status: 4
+tags: []
+user_id: prana

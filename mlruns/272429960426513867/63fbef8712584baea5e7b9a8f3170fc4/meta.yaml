@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/63fbef8712584baea5e7b9a8f3170fc4/artifacts
+end_time: 1745503644004
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 63fbef8712584baea5e7b9a8f3170fc4
+run_name: industrious-lark-486
+run_uuid: 63fbef8712584baea5e7b9a8f3170fc4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745503460322
+status: 3
+tags: []
+user_id: prana

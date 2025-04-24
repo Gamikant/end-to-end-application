@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/bc3472fa205041bc8d2ff7a689c2bfc2/artifacts
+end_time: 1745499058725
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: bc3472fa205041bc8d2ff7a689c2bfc2
+run_name: enchanting-goose-302
+run_uuid: bc3472fa205041bc8d2ff7a689c2bfc2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745498870997
+status: 4
+tags: []
+user_id: prana

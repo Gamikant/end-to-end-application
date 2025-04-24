@@ -58,15 +58,27 @@ def plot_feature_importance(importance_scores, feature_names, method, prefix):
     plt.savefig(f'figures/{prefix}_{method}_importance.png')
     plt.close()
 
-def feature_selection(dev_F, dev_NF, oos_F, oos_NF, feature_names, method, feature_threshold, ratios=[0.8,0.5,0.2], hidden_activation='relu', dropout=0.1, optimizer='adam', loss='mse', epochs=10, batch_size=32):
+def feature_selection(dev_F, dev_NF, oos_F, oos_NF, feature_names, method, feature_threshold, 
+                     ratios=[0.8,0.5,0.2], hidden_activation='relu', dropout=0.1, 
+                     optimizer='adam', loss='mse', epochs=10, batch_size=32):
+    
+    # Build and train fraud autoencoder
     autoencoder_F = build_autoencoder(dev_F.shape[1], ratios, hidden_activation, dropout, optimizer, loss)
-    history_F = autoencoder_F.fit(dev_F, dev_F, epochs=epochs, batch_size=batch_size,
-                               validation_data=(oos_F, oos_F))
+    history_F = autoencoder_F.fit(
+        dev_F, dev_F,
+        epochs=epochs,
+        batch_size=batch_size,
+        validation_data=(oos_F, oos_F)
+    )
     
     # Build and train non-fraud autoencoder
     autoencoder_NF = build_autoencoder(dev_NF.shape[1], ratios, hidden_activation, dropout, optimizer, loss)
-    history_NF = autoencoder_NF.fit(dev_NF, dev_NF, epochs=epochs, batch_size=batch_size,
-                                 validation_data=(oos_NF, oos_NF))
+    history_NF = autoencoder_NF.fit(
+        dev_NF, dev_NF,
+        epochs=epochs,
+        batch_size=batch_size,
+        validation_data=(oos_NF, oos_NF)
+    )
     
     # Get importance scores using both methods
     importance_F = get_feature_importance(autoencoder_F, dev_F, method)
@@ -83,7 +95,7 @@ def feature_selection(dev_F, dev_NF, oos_F, oos_NF, feature_names, method, featu
     
     # Convert numeric indices to feature names before returning
     features_to_drop = [feature_names[idx] for idx in features_to_drop]
-    return features_to_drop, importance_NF, importance_F, history_F, history_NF
+    return features_to_drop, importance_NF, importance_F, history_F, history_NF, autoencoder_F, autoencoder_NF
 
 def determine_features_to_drop(importance_F, importance_NF, feature_threshold=0.1):
     top_features_NF = np.argsort(importance_NF)[-int(len(importance_NF) * feature_threshold):]

@@ -5,3 +5,317 @@
 2025-04-23 21:35:53 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 1.0, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
 2025-04-23 21:35:53 - INFO - Running initial feature selection using default parameters
 2025-04-23 21:38:12 - INFO - Feature selection completed. Dropped features: ['V1', 'V5', 'V9', 'V15', 'V19', 'V20', 'V24', 'V26']
+2025-04-24 17:44:32 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 17:44:32 - INFO - Running initial feature selection using default parameters
+2025-04-24 17:47:27 - INFO - Feature selection completed. Dropped features: ['V1', 'V4', 'V9', 'V10', 'V11', 'V12', 'V14', 'V20', 'V22', 'V25', 'V26', 'Amount']
+2025-04-24 18:02:33 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 18:02:33 - INFO - Running initial feature selection using default parameters
+2025-04-24 18:08:09 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 18:08:09 - INFO - Running initial feature selection using default parameters
+2025-04-24 18:11:04 - ERROR - Error during feature selection: [Errno 2] No such file or directory: 'input_data/dev.csv'
+2025-04-24 18:11:04 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 26, in <module>
+    features_dropped = fs(default_hyperparameters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\prana\OneDrive\Desktop\Application\pipeline.py", line 71, in fs
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 35, in log_metrics_and_artifacts
+    mlflow.log_artifact("input_data/dev.csv", "datasets")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'input_data/dev.csv'
+
+2025-04-24 18:17:48 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 18:17:48 - INFO - Running initial feature selection using default parameters
+2025-04-24 18:20:58 - ERROR - Error during feature selection: [Errno 2] No such file or directory: 'input_data/dev.csv'
+2025-04-24 18:20:58 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 26, in <module>
+    features_dropped = fs(default_hyperparameters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\prana\OneDrive\Desktop\Application\pipeline.py", line 71, in fs
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 35, in log_metrics_and_artifacts
+    mlflow.log_artifact("input_data/dev.csv", "datasets")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'input_data/dev.csv'
+
+2025-04-24 18:36:14 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 18:36:14 - INFO - Running initial feature selection using default parameters
+2025-04-24 18:36:17 - ERROR - Error during feature selection: Run with UUID 643a82c13224408281a57325fc8e5998 is already active. To start a new run, first end the current run with mlflow.end_run(). To start a nested run, call start_run with nested=True
+2025-04-24 18:36:17 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 35, in run_feature_selection
+    features_dropped = fs(default_hyperparameters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\prana\OneDrive\Desktop\Application\pipeline.py", line 15, in fs
+    with mlflow.start_run() as run:
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 351, in start_run
+    raise Exception(
+Exception: Run with UUID 643a82c13224408281a57325fc8e5998 is already active. To start a new run, first end the current run with mlflow.end_run(). To start a nested run, call start_run with nested=True
+
+2025-04-24 18:36:17 - ERROR - Error in setup: Run with UUID 643a82c13224408281a57325fc8e5998 is already active. To start a new run, first end the current run with mlflow.end_run(). To start a nested run, call start_run with nested=True
+2025-04-24 18:36:17 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 35, in run_feature_selection
+    features_dropped = fs(default_hyperparameters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\prana\OneDrive\Desktop\Application\pipeline.py", line 15, in fs
+    with mlflow.start_run() as run:
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 351, in start_run
+    raise Exception(
+Exception: Run with UUID 643a82c13224408281a57325fc8e5998 is already active. To start a new run, first end the current run with mlflow.end_run(). To start a nested run, call start_run with nested=True
+
+2025-04-24 18:42:26 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 18:42:29 - INFO - Running initial feature selection using default parameters
+2025-04-24 18:45:15 - ERROR - Error during feature selection: [Errno 2] No such file or directory: 'input_data/dev.csv'
+2025-04-24 18:45:15 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 47, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 35, in log_metrics_and_artifacts
+    mlflow.log_artifact("input_data/dev.csv", "datasets")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'input_data/dev.csv'
+
+2025-04-24 18:45:15 - ERROR - Error in setup: [Errno 2] No such file or directory: 'input_data/dev.csv'
+2025-04-24 18:45:15 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 47, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 35, in log_metrics_and_artifacts
+    mlflow.log_artifact("input_data/dev.csv", "datasets")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'input_data/dev.csv'
+
+2025-04-24 18:48:57 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 18:48:59 - INFO - Running initial feature selection using default parameters
+2025-04-24 18:51:48 - ERROR - Error during feature selection: Cannot save file into a non-existent directory: 'feature_selection'
+2025-04-24 18:51:48 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 47, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 45, in log_metrics_and_artifacts
+    dev_profile.to_csv("feature_selection/dev_profile.csv")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\formats\format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\formats\csvs.py", line 247, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'feature_selection'
+
+2025-04-24 18:51:48 - ERROR - Error in setup: Cannot save file into a non-existent directory: 'feature_selection'
+2025-04-24 18:51:48 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 47, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 45, in log_metrics_and_artifacts
+    dev_profile.to_csv("feature_selection/dev_profile.csv")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\formats\format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\formats\csvs.py", line 247, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'feature_selection'
+
+2025-04-24 18:53:29 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 18:53:31 - INFO - Running initial feature selection using default parameters
+2025-04-24 18:56:39 - INFO - Feature selection completed. Dropped features: ['V2', 'V8', 'V9', 'V11', 'V19', 'V20']
+2025-04-24 19:02:19 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 19:02:22 - INFO - Running initial feature selection using default parameters
+2025-04-24 19:05:26 - ERROR - Error during feature selection: [Errno 2] No such file or directory: 'input_data/dev.csv'
+2025-04-24 19:05:26 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 47, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 35, in log_metrics_and_artifacts
+    mlflow.log_artifact("input_data/dev.csv", "datasets")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'input_data/dev.csv'
+
+2025-04-24 19:05:26 - ERROR - Error in setup: [Errno 2] No such file or directory: 'input_data/dev.csv'
+2025-04-24 19:05:26 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 47, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 35, in log_metrics_and_artifacts
+    mlflow.log_artifact("input_data/dev.csv", "datasets")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'input_data/dev.csv'
+
+2025-04-24 19:07:11 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 19:07:13 - INFO - Running initial feature selection using default parameters
+2025-04-24 19:10:05 - INFO - Feature selection completed. Dropped features: ['V4', 'V6', 'V9', 'V11', 'V12', 'V20', 'V25']
+2025-04-24 19:11:55 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 19:11:57 - INFO - Running initial feature selection using default parameters
+2025-04-24 19:14:59 - INFO - Feature selection completed. Dropped features: ['V4', 'V11', 'V12', 'V15', 'V24', 'V25', 'V26']
+2025-04-24 19:34:18 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 19:34:20 - INFO - Running initial feature selection using default parameters
+2025-04-24 19:37:24 - INFO - Feature selection completed. Dropped features: ['V1', 'V4', 'V10', 'V12', 'V14', 'V18', 'V24', 'V28']
+2025-04-24 19:42:14 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 19:42:17 - INFO - Running initial feature selection using default parameters
+2025-04-24 19:45:06 - INFO - Feature selection completed. Dropped features: ['V1', 'V4', 'V7', 'V9', 'V11', 'V18', 'V20', 'V22', 'V26', 'V27']
+2025-04-24 19:47:32 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 19:47:34 - INFO - Running initial feature selection using default parameters
+2025-04-24 19:50:46 - INFO - Feature selection completed. Dropped features: ['V1', 'V3', 'V4', 'V6', 'V8', 'V9', 'V18', 'V20', 'V22', 'V25', 'V26', 'V27', 'Amount']
+2025-04-24 19:57:52 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 're', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 19:57:55 - INFO - Running initial feature selection using default parameters
+2025-04-24 19:59:06 - ERROR - Error during feature selection: [Errno 2] No such file or directory: "'feature selection/abnormal_'+re+'_importance.csv'"
+2025-04-24 19:59:06 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 46, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 40, in log_metrics_and_artifacts
+    mlflow.log_artifact(f"'feature selection/abnormal_'+{method}+'_importance.csv'", "feature_importance")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: "'feature selection/abnormal_'+re+'_importance.csv'"
+
+2025-04-24 19:59:06 - ERROR - Error in setup: [Errno 2] No such file or directory: "'feature selection/abnormal_'+re+'_importance.csv'"
+2025-04-24 19:59:06 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 46, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 40, in log_metrics_and_artifacts
+    mlflow.log_artifact(f"'feature selection/abnormal_'+{method}+'_importance.csv'", "feature_importance")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: "'feature selection/abnormal_'+re+'_importance.csv'"
+
+2025-04-24 20:04:12 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 're', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 20:04:14 - INFO - Running initial feature selection using default parameters
+2025-04-24 20:05:28 - ERROR - Error during feature selection: can only concatenate str (not "set") to str
+2025-04-24 20:05:28 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 46, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 40, in log_metrics_and_artifacts
+    mlflow.log_artifact('feature selection/abnormal_'+{method}+'_importance.csv', "feature_importance")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+TypeError: can only concatenate str (not "set") to str
+
+2025-04-24 20:05:28 - ERROR - Error in setup: can only concatenate str (not "set") to str
+2025-04-24 20:05:28 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 46, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 40, in log_metrics_and_artifacts
+    mlflow.log_artifact('feature selection/abnormal_'+{method}+'_importance.csv', "feature_importance")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+TypeError: can only concatenate str (not "set") to str
+
+2025-04-24 20:07:37 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 're', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 20:07:40 - INFO - Running initial feature selection using default parameters
+2025-04-24 20:08:55 - INFO - Feature selection completed. Dropped features: ['V27', 'V28']
+2025-04-24 20:12:10 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 're', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 20:12:13 - INFO - Running initial feature selection using default parameters
+2025-04-24 20:13:22 - INFO - Feature selection completed. Dropped features: ['V23', 'V28']
+2025-04-24 20:24:36 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 're', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 20:24:38 - INFO - Running initial feature selection using default parameters
+2025-04-24 20:25:45 - INFO - Feature selection completed. Dropped features: ['V23', 'V28']
+2025-04-24 20:33:21 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 're', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 20:33:24 - INFO - Running initial feature selection using default parameters
+2025-04-24 20:34:37 - ERROR - Error during feature selection: [Errno 2] No such file or directory: 'figures/normal_fpi_importance.png'
+2025-04-24 20:34:37 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 46, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 109, in log_metrics_and_artifacts
+    mlflow.log_artifact(fig_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'figures/normal_fpi_importance.png'
+
+2025-04-24 20:34:37 - ERROR - Error in setup: [Errno 2] No such file or directory: 'figures/normal_fpi_importance.png'
+2025-04-24 20:34:37 - ERROR - Traceback (most recent call last):
+  File "c:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 46, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "c:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 109, in log_metrics_and_artifacts
+    mlflow.log_artifact(fig_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'figures/normal_fpi_importance.png'
+
+2025-04-24 20:39:10 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 're', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 20:39:13 - INFO - Running initial feature selection using default parameters
+2025-04-24 20:40:25 - INFO - Feature selection completed. Dropped features: ['V27', 'V28']
+2025-04-24 20:42:51 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-24 20:42:54 - INFO - Running initial feature selection using default parameters
+2025-04-24 20:45:55 - INFO - Feature selection completed. Dropped features: ['V1', 'V2', 'V3', 'V9', 'V11', 'V12', 'V13', 'V14', 'V16', 'V17', 'V18', 'V20', 'V26']

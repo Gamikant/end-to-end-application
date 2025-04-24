@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/eae84389946643d7809b441bb72b1828/artifacts
+end_time: 1745507425085
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: eae84389946643d7809b441bb72b1828
+run_name: carefree-swan-749
+run_uuid: eae84389946643d7809b441bb72b1828
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745507352951
+status: 3
+tags: []
+user_id: prana

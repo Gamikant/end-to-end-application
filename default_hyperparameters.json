@@ -19,13 +19,5 @@
     "hidden_activation": "selu",
     "optimizer": "adam",
     "loss": "mse"
-    },
-    "model_params" : 
-    {
-    "C": 1.0,
-    "penalty": "l2",
-    "solver": "lbfgs",
-    "max_iter": 200,
-    "random_state": 42
     }
 }

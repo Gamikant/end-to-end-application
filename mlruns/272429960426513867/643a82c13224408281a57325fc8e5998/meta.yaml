@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/643a82c13224408281a57325fc8e5998/artifacts
+end_time: 1745499977066
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 643a82c13224408281a57325fc8e5998
+run_name: delicate-robin-666
+run_uuid: 643a82c13224408281a57325fc8e5998
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745499974857
+status: 4
+tags: []
+user_id: prana

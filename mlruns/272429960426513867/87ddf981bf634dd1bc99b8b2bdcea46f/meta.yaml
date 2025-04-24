@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/87ddf981bf634dd1bc99b8b2bdcea46f/artifacts
+end_time: 1745504946921
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 87ddf981bf634dd1bc99b8b2bdcea46f
+run_name: gifted-cub-354
+run_uuid: 87ddf981bf634dd1bc99b8b2bdcea46f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745504875008
+status: 4
+tags: []
+user_id: prana

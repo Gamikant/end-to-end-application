@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/a4f1982c5af34ca59700cff924202f62/artifacts
+end_time: 1745504106096
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: a4f1982c5af34ca59700cff924202f62
+run_name: dapper-grouse-34
+run_uuid: a4f1982c5af34ca59700cff924202f62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745503937081
+status: 3
+tags: []
+user_id: prana

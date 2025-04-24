@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/0ff173222a7845659578a33ff8ef0724/artifacts
+end_time: 1745506545630
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 0ff173222a7845659578a33ff8ef0724
+run_name: adventurous-bug-233
+run_uuid: 0ff173222a7845659578a33ff8ef0724
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745506478853
+status: 3
+tags: []
+user_id: prana

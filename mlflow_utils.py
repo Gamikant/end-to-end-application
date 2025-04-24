@@ -2,35 +2,65 @@ import mlflow
 import mlflow.keras
 from mlflow.tracking import MlflowClient
 import os
+import pandas as pd
 
 def init_mlflow(experiment_name="Feature_Selection_Pipeline"):
     """Initialize MLflow experiment"""
-    mlflow.set_tracking_uri("http://localhost:5000")  # Change if using remote server
-    
-    # Create experiment if it doesn't exist
+    mlflow.set_tracking_uri("http://localhost:5000")
     experiment = mlflow.get_experiment_by_name(experiment_name)
     if experiment is None:
         mlflow.create_experiment(experiment_name)
     mlflow.set_experiment(experiment_name)
-    
+
 def log_metrics_and_artifacts(
     importance_scores_normal,
     importance_scores_abnormal,
     feature_names,
+    method,
     features_dropped,
-    autoencoder_F_history,  # History for fraud autoencoder
-    autoencoder_NF_history, # History for non-fraud autoencoder
-    figure_paths
+    autoencoder_F_history,
+    autoencoder_NF_history,
+    figure_paths,
+    autoencoder_F,  # Add autoencoder models
+    autoencoder_NF,
+    dev_data,       # Add datasets
+    oos_data,
+    oot_data
 ):
     """Log metrics and artifacts to MLflow"""
+    # Log models
+    mlflow.keras.log_model(autoencoder_F, "fraud_autoencoder")
+    mlflow.keras.log_model(autoencoder_NF, "nonfraud_autoencoder")
     
-    # Log feature importance metrics
+    # Log datasets
+    mlflow.log_artifact("input data/dev.csv", "datasets")
+    mlflow.log_artifact("input data/oos.csv", "datasets")
+    mlflow.log_artifact("input data/oot.csv", "datasets")
+
+    mlflow.log_artifact('feature selection/abnormal_'+method+'_importance.csv', "feature_importance")
+    mlflow.log_artifact('feature selection/normal_'+method+'_importance.csv', "feature_importance")
+    
+    # Log dataset profiles
+    dev_profile = dev_data.describe()
+    oos_profile = oos_data.describe()
+    oot_profile = oot_data.describe()
+    
+    # Save and log profiles
+    dev_profile.to_csv("feature selection/dev_profile.csv")
+    oos_profile.to_csv("feature selection/oos_profile.csv")
+    oot_profile.to_csv("feature selection/oot_profile.csv")
+    
+    mlflow.log_artifact("feature selection/dev_profile.csv", "data_profiles")
+    mlflow.log_artifact("feature selection/oos_profile.csv", "data_profiles")
+    mlflow.log_artifact("feature selection/oot_profile.csv", "data_profiles")
+    
+    # Log existing metrics and artifacts
     for feature, importance in zip(feature_names, importance_scores_normal):
         mlflow.log_metric(f"normal_importance_{feature}", importance)
     
     for feature, importance in zip(feature_names, importance_scores_abnormal):
         mlflow.log_metric(f"abnormal_importance_{feature}", importance)
-    
+  
     # Log fraud autoencoder training metrics
     mlflow.log_metric("fraud_autoencoder_final_loss", autoencoder_F_history.history['loss'][-1])
     mlflow.log_metric("fraud_autoencoder_final_val_loss", autoencoder_F_history.history['val_loss'][-1])
@@ -70,7 +100,9 @@ def log_metrics_and_artifacts(
     # Log all artifacts
     figure_paths.extend([
         'figures/fraud_autoencoder_loss.png',
-        'figures/nonfraud_autoencoder_loss.png'
+        'figures/nonfraud_autoencoder_loss.png',
+        'figures/normal_'+method+'_importance.png',
+        'figures/abnormal_'+method+'_importance.png'
     ])
     
     for fig_path in figure_paths:

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/274f649278974a36aca4a9ad8047b590/artifacts
+end_time: 1745496657804
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 274f649278974a36aca4a9ad8047b590
+run_name: marvelous-lark-971
+run_uuid: 274f649278974a36aca4a9ad8047b590
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745496656089
+status: 4
+tags: []
+user_id: prana

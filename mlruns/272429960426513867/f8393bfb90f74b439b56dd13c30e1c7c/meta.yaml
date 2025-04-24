@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/f8393bfb90f74b439b56dd13c30e1c7c/artifacts
+end_time: 1745501199527
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: f8393bfb90f74b439b56dd13c30e1c7c
+run_name: ambitious-sheep-541
+run_uuid: f8393bfb90f74b439b56dd13c30e1c7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745501011511
+status: 3
+tags: []
+user_id: prana

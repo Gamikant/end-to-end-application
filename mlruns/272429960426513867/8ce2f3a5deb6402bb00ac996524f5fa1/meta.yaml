@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/8ce2f3a5deb6402bb00ac996524f5fa1/artifacts
+end_time: 1745498464070
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 8ce2f3a5deb6402bb00ac996524f5fa1
+run_name: amusing-snipe-706
+run_uuid: 8ce2f3a5deb6402bb00ac996524f5fa1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745498292095
+status: 4
+tags: []
+user_id: prana

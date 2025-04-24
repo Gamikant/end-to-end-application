@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/2a694499dac04d75aa02065673381339/artifacts
+end_time: 1745504446783
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 2a694499dac04d75aa02065673381339
+run_name: glamorous-squid-144
+run_uuid: 2a694499dac04d75aa02065673381339
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745504254487
+status: 3
+tags: []
+user_id: prana

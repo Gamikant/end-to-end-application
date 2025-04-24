@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/225effad717b4e94a35ec280f7225f5f/artifacts
+end_time: 1745496060025
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: 225effad717b4e94a35ec280f7225f5f
+run_name: stylish-lark-660
+run_uuid: 225effad717b4e94a35ec280f7225f5f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745495909573
+status: 3
+tags: []
+user_id: prana
