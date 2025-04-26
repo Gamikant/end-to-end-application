@@ -10,3 +10,371 @@
 [2025-04-22T21:59:13.126Z] GET /train-predict - ::ffff:127.0.0.1 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0
 
 [2025-04-23T03:42:51.821Z] GET / - ::ffff:127.0.0.1 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0
+
+[2025-04-24T07:32:28.669Z] POST /api/models/train-predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T07:32:28.710Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T10:35:55.798Z] POST /api/models/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T10:36:36.105Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T10:36:36.126Z] POST /api/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T10:41:38.917Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T10:41:38.951Z] POST /api/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:43:24.828Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:43:24.858Z] POST /api/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:44:21.100Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:44:21.106Z] POST /api/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:44:56.176Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:44:56.191Z] POST /api/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:45:03.010Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:45:03.020Z] POST /api/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:48:31.514Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:48:31.527Z] POST /api/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:48:39.690Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:48:39.703Z] POST /api/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:56:04.534Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:56:04.549Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T13:56:04.574Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:01:51.341Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:01:51.349Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:01:51.352Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:02:51.534Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:03:15.202Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:03:24.073Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:03:24.084Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:03:24.089Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:03:36.222Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:03:43.931Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:03:48.326Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:04:03.436Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:04:03.450Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:04:03.453Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:11:05.629Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:11:05.646Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:11:05.649Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:19:11.821Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:19:18.597Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:19:29.586Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:20:10.912Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:20:10.931Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:20:10.935Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:20:16.117Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:20:16.127Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:20:16.131Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:20:32.867Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:24:13.478Z] POST /api/models/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:24:38.585Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:24:55.260Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:25:04.737Z] POST /api/models/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:25:35.467Z] POST /api/models/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:30:29.589Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:30:43.955Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:30:43.962Z] POST /api/model/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:31:00.996Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:31:01.010Z] POST /api/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:31:06.519Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:31:06.528Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:31:06.533Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:31:15.413Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:31:27.398Z] POST /api/models/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:31:45.373Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:32:00.062Z] POST /api/models/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:32:06.318Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:32:20.263Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:32:20.278Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:32:20.283Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:34:31.880Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:34:31.895Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:34:31.900Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:35:48.920Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:35:48.931Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:35:48.932Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:41:14.042Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:41:14.052Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:41:14.053Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T14:46:04.330Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T14:46:04.373Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T15:43:33.023Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T15:43:33.039Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T15:43:50.534Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T15:43:50.567Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T15:43:50.602Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T15:44:35.984Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T15:44:35.997Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T15:44:36.003Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T15:44:59.082Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T15:44:59.105Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T15:44:59.129Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T18:43:03.431Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T18:43:03.464Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T18:43:03.498Z] POST /api/2.0/mlflow/runs/create - ::ffff:127.0.0.1 - axios/1.8.4
+
+[2025-04-24T18:43:37.509Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T18:43:37.544Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T18:57:33.750Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T18:57:33.803Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T18:57:56.016Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T18:57:56.066Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T18:59:30.141Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T18:59:30.170Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:00:23.592Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:00:23.665Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:01:37.103Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:01:37.143Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:03:01.510Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:03:01.539Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:03:55.929Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:03:55.966Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:06:10.425Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:06:10.495Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:06:41.029Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:06:41.059Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:07:10.425Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:07:10.493Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:16:38.211Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:16:38.235Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:17:04.778Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:17:04.806Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:17:11.546Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:17:11.574Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:19:13.497Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:19:13.538Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:20:43.504Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:20:43.573Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:21:34.601Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:21:34.621Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:22:36.682Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:22:36.712Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:24:06.386Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:24:06.435Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:24:37.440Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:24:37.462Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:25:31.468Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:25:31.493Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:25:33.509Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:25:33.517Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:27:32.008Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:27:32.085Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:29:05.406Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:29:05.431Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:32:48.320Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:35:05.153Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:36:51.464Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:37:39.511Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:37:39.550Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:38:41.278Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:38:41.313Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:42:52.436Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:42:52.473Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:43:51.309Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:43:51.368Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:46:35.150Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:46:35.198Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:49:20.551Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-24T19:49:20.594Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:18:45.236Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:18:49.541Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:22:10.022Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:22:40.962Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:23:26.300Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:26:34.589Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:40:12.017Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:40:45.343Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:43:14.330Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:47:53.792Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:53:43.203Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T04:57:05.161Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:01:00.582Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:05:55.363Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:07:05.499Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:09:06.317Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:16:23.722Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:16:26.102Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:18:17.542Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:18:19.534Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:26:44.591Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:26:50.177Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:29:03.735Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T05:29:05.844Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T06:27:54.078Z] POST /api/clean - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+
+[2025-04-25T06:27:55.576Z] POST /api/models/predict - ::1 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
