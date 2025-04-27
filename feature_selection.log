@@ -319,3 +319,127 @@ FileNotFoundError: [Errno 2] No such file or directory: 'figures/normal_fpi_impo
 2025-04-24 20:42:51 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
 2025-04-24 20:42:54 - INFO - Running initial feature selection using default parameters
 2025-04-24 20:45:55 - INFO - Feature selection completed. Dropped features: ['V1', 'V2', 'V3', 'V9', 'V11', 'V12', 'V13', 'V14', 'V16', 'V17', 'V18', 'V20', 'V26']
+2025-04-25 16:25:55 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}}
+2025-04-25 16:25:57 - INFO - Running initial feature selection using default parameters
+2025-04-25 16:29:00 - INFO - Feature selection completed. Dropped features: ['V1', 'V2', 'V4', 'V5', 'V9', 'V20', 'V22', 'V26']
+2025-04-27 16:59:58 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:00:02 - WARNING - Retrying (Retry(total=6, connect=6, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002448E3407A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:00:11 - WARNING - Retrying (Retry(total=5, connect=5, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002448E340B60>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:00:23 - WARNING - Retrying (Retry(total=4, connect=4, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002448E340950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:00:44 - WARNING - Retrying (Retry(total=3, connect=3, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002448E341190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:01:21 - WARNING - Retrying (Retry(total=2, connect=2, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002448E3413D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:02:29 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:02:33 - WARNING - Retrying (Retry(total=6, connect=6, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA565A20C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:02:42 - WARNING - Retrying (Retry(total=5, connect=5, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA58590B30>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:02:54 - WARNING - Retrying (Retry(total=4, connect=4, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA58590920>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:03:15 - WARNING - Retrying (Retry(total=3, connect=3, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA58591160>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:03:52 - WARNING - Retrying (Retry(total=2, connect=2, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA585913A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:05:01 - WARNING - Retrying (Retry(total=1, connect=1, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA58591550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:07:05 - WARNING - Retrying (Retry(total=0, connect=0, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA58591730>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline
+2025-04-27 17:07:09 - ERROR - Error in setup: API request to http://localhost:5000/api/2.0/mlflow/experiments/get-by-name failed with exception HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA58591910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-27 17:07:09 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 395, in request
+    self.endheaders()
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1322, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1081, in _send_output
+    self.send(msg)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1025, in send
+    self.connect()
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 243, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 218, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001BA58591910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  [Previous line repeated 4 more times]
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA58591910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\utils\rest_utils.py", line 181, in http_request
+    return _get_http_response_with_retries(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\utils\request_utils.py", line 237, in _get_http_response_with_retries
+    return session.request(method, url, allow_redirects=allow_redirects, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA58591910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 28, in run_feature_selection
+    init_mlflow()
+  File "C:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 10, in init_mlflow
+    experiment = mlflow.get_experiment_by_name(experiment_name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1678, in get_experiment_by_name
+    return MlflowClient().get_experiment_by_name(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 1698, in get_experiment_by_name
+    return self._tracking_client.get_experiment_by_name(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 586, in get_experiment_by_name
+    return self.store.get_experiment_by_name(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 641, in get_experiment_by_name
+    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 90, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\utils\rest_utils.py", line 387, in call_endpoint
+    response = http_request(**call_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\utils\rest_utils.py", line 204, in http_request
+    raise MlflowException(f"API request to {url} failed with exception {e}")
+mlflow.exceptions.MlflowException: API request to http://localhost:5000/api/2.0/mlflow/experiments/get-by-name failed with exception HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA58591910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+

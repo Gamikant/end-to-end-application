@@ -3,11 +3,10 @@
     "validation_file": "input data/oos.csv",
     "test_file": "input data/oot.csv",
     "target_column": "Class",
-    "drop_features": "no",
     "train_on": "normal",
     "feature_selection": "fpi",
     "feature_threshold": 0.1,
-    "model_threshold": 0.5,
+    "model_threshold": 0,
     "model": "LogisticRegression",
     "cross_validation": 5,
     "autoencoder" : 
@@ -19,5 +18,12 @@
     "hidden_activation": "selu",
     "optimizer": "adam",
     "loss": "mse"
+    },
+    "model_params": {
+        "C": 0.01,
+        "penalty": "l2",
+        "solver": "lbfgs",
+        "max_iter": 200,
+        "random_state": 42
     }
 }

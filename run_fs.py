@@ -35,8 +35,7 @@ def run_feature_selection():
                 mlflow.log_params({
                     "feature_selection_method": default_hyperparameters['feature_selection'],
                     "feature_threshold": default_hyperparameters['feature_threshold'],
-                    "autoencoder_epochs": default_hyperparameters['autoencoder']['epochs'],
-                    "autoencoder_batch_size": default_hyperparameters['autoencoder']['batch_size']
+                    "autoencoder_params": default_hyperparameters['autoencoder']
                 })
                 
                 # Run feature selection

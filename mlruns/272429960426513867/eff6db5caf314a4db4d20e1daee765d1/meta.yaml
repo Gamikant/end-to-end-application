@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/eff6db5caf314a4db4d20e1daee765d1/artifacts
+end_time: 1745578740895
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: eff6db5caf314a4db4d20e1daee765d1
+run_name: funny-wolf-288
+run_uuid: eff6db5caf314a4db4d20e1daee765d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745578557917
+status: 3
+tags: []
+user_id: prana
