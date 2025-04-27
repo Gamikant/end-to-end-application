@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/a6188abb0f264cf5a0ce50820331b1e4/artifacts
+end_time: 1745756617070
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: a6188abb0f264cf5a0ce50820331b1e4
+run_name: nebulous-lark-837
+run_uuid: a6188abb0f264cf5a0ce50820331b1e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745756459584
+status: 4
+tags: []
+user_id: prana

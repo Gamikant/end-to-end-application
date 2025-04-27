@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/118994762958963218/4212b593d34440ad80ff2562c9c7cdff/artifacts
+end_time: 1745756870925
+entry_point_name: ''
+experiment_id: '118994762958963218'
+lifecycle_stage: active
+run_id: 4212b593d34440ad80ff2562c9c7cdff
+run_name: incongruous-shad-483
+run_uuid: 4212b593d34440ad80ff2562c9c7cdff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745756794000
+status: 3
+tags: []
+user_id: prana

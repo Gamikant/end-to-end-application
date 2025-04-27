@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/118994762958963218/9ebad2f6498c434980ab88b2c1bbf06d/artifacts
+end_time: 1745755857392
+entry_point_name: ''
+experiment_id: '118994762958963218'
+lifecycle_stage: active
+run_id: 9ebad2f6498c434980ab88b2c1bbf06d
+run_name: thundering-fowl-656
+run_uuid: 9ebad2f6498c434980ab88b2c1bbf06d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745755776544
+status: 4
+tags: []
+user_id: prana

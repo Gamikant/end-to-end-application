@@ -443,3 +443,47 @@ Traceback (most recent call last):
     raise MlflowException(f"API request to {url} failed with exception {e}")
 mlflow.exceptions.MlflowException: API request to http://localhost:5000/api/2.0/mlflow/experiments/get-by-name failed with exception HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Feature_Selection_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA58591910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
 
+2025-04-27 17:20:42 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:20:44 - INFO - Running initial feature selection using default parameters
+2025-04-27 17:23:37 - INFO - Feature selection completed. Dropped features: ['V1', 'V4', 'V9', 'V12', 'V18', 'V20', 'V22', 'V24', 'V27', 'Amount']
+2025-04-27 17:50:57 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:50:59 - INFO - Running initial feature selection using default parameters
+2025-04-27 17:53:37 - ERROR - Error during feature selection: must be real number, not str
+2025-04-27 17:53:37 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 47, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "C:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 92, in log_metrics_and_artifacts
+    mlflow.log_metric("Features Dropped", str(features_dropped))
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 923, in log_metric
+    return MlflowClient().log_metric(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 1967, in log_metric
+    return self._tracking_client.log_metric(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 667, in log_metric
+    self.store.log_metric(run_id, metric)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 517, in log_metric
+    LogMetric(
+TypeError: must be real number, not str
+
+2025-04-27 17:53:37 - ERROR - Error in setup: must be real number, not str
+2025-04-27 17:53:37 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 47, in run_feature_selection
+    log_metrics_and_artifacts(
+  File "C:\Users\prana\OneDrive\Desktop\Application\mlflow_utils.py", line 92, in log_metrics_and_artifacts
+    mlflow.log_metric("Features Dropped", str(features_dropped))
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 923, in log_metric
+    return MlflowClient().log_metric(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 1967, in log_metric
+    return self._tracking_client.log_metric(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 667, in log_metric
+    self.store.log_metric(run_id, metric)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 517, in log_metric
+    LogMetric(
+TypeError: must be real number, not str
+
+2025-04-27 18:01:07 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 18:01:10 - INFO - Running initial feature selection using default parameters
+2025-04-27 18:04:16 - INFO - Feature selection completed. Dropped features: ['V1', 'V4', 'V9', 'V21', 'V26', 'Amount']

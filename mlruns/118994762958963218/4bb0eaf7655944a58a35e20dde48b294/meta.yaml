@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/118994762958963218/4bb0eaf7655944a58a35e20dde48b294/artifacts
+end_time: 1745755345631
+entry_point_name: ''
+experiment_id: '118994762958963218'
+lifecycle_stage: active
+run_id: 4bb0eaf7655944a58a35e20dde48b294
+run_name: flawless-quail-182
+run_uuid: 4bb0eaf7655944a58a35e20dde48b294
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745755294567
+status: 4
+tags: []
+user_id: prana

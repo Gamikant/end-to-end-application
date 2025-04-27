@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/c6c20284be194530a07b1d28ced71d5c/artifacts
+end_time: 1745757256199
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: c6c20284be194530a07b1d28ced71d5c
+run_name: unruly-worm-568
+run_uuid: c6c20284be194530a07b1d28ced71d5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745757070100
+status: 3
+tags: []
+user_id: prana

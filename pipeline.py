@@ -164,7 +164,7 @@ def pipeline(hyperparameters):
     plt.title('Confusion Matrix')
     plt.xlabel('Predicted')
     plt.ylabel('True')
-    plt.savefig('predictions_oot/confusion_matrix.png')
+    plt.savefig('predictions/confusion_matrix.png')
 
     save_results(encoded_dev, encoded_oos, encoded_oot, 
                 final_autoencoder, final_encoder_trained, reg_model)
@@ -179,6 +179,6 @@ def pipeline(hyperparameters):
         'f1': f1,
         'precision': precision,
         'recall': recall,
-        'confusion_mat': confusion_mat,
+        'confusion_matrix': confusion_mat,
         'predictions_df': predictions_df
     }

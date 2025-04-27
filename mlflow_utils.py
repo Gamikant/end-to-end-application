@@ -53,13 +53,6 @@ def log_metrics_and_artifacts(
     mlflow.log_artifact("feature selection/dev_profile.csv", "data_profiles")
     mlflow.log_artifact("feature selection/oos_profile.csv", "data_profiles")
     mlflow.log_artifact("feature selection/oot_profile.csv", "data_profiles")
-    
-    # Log existing metrics and artifacts
-    for feature, importance in zip(feature_names, importance_scores_normal):
-        mlflow.log_metric(f"normal_importance_{feature}", importance)
-    
-    for feature, importance in zip(feature_names, importance_scores_abnormal):
-        mlflow.log_metric(f"abnormal_importance_{feature}", importance)
   
     # Log fraud autoencoder training metrics
     mlflow.log_metric("fraud_autoencoder_final_loss", autoencoder_F_history.history['loss'][-1])
@@ -96,7 +89,7 @@ def log_metrics_and_artifacts(
     
     # Log number of features dropped
     mlflow.log_metric("num_features_dropped", len(features_dropped))
-    
+        
     # Log all artifacts
     figure_paths.extend([
         'figures/fraud_autoencoder_loss.png',
@@ -106,7 +99,7 @@ def log_metrics_and_artifacts(
     ])
     
     for fig_path in figure_paths:
-        mlflow.log_artifact(fig_path)
+        mlflow.log_artifact(fig_path, "important figures")
     
     # Log feature selection results
     with open("feature selection/features_dropped.txt", "r") as f:

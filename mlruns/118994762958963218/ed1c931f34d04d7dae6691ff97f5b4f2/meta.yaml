@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/118994762958963218/ed1c931f34d04d7dae6691ff97f5b4f2/artifacts
+end_time: 1745755703400
+entry_point_name: ''
+experiment_id: '118994762958963218'
+lifecycle_stage: active
+run_id: ed1c931f34d04d7dae6691ff97f5b4f2
+run_name: flawless-boar-621
+run_uuid: ed1c931f34d04d7dae6691ff97f5b4f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745755627104
+status: 4
+tags: []
+user_id: prana

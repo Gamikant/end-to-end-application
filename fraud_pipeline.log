@@ -1,0 +1,188 @@
+2025-04-27 17:31:32 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:31:34 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-27 17:32:25 - ERROR - Error during run pipeline: [Errno 2] No such file or directory: 'predictions_oot/confusion_matrix.png'
+2025-04-27 17:32:25 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fp.py", line 43, in run_pipeline
+    results = pipeline(default_hyperparameters)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\OneDrive\Desktop\Application\pipeline.py", line 167, in pipeline
+    plt.savefig('predictions_oot/confusion_matrix.png')
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\pyplot.py", line 1119, in savefig
+    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\backends\backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\backends\backend_agg.py", line 446, in _print_pil
+    mpl.image.imsave(
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\image.py", line 1656, in imsave
+    image.save(fname, **pil_kwargs)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 2435, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'predictions_oot/confusion_matrix.png'
+
+2025-04-27 17:32:25 - ERROR - Error in setup: [Errno 2] No such file or directory: 'predictions_oot/confusion_matrix.png'
+2025-04-27 17:32:25 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fp.py", line 43, in run_pipeline
+    results = pipeline(default_hyperparameters)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\OneDrive\Desktop\Application\pipeline.py", line 167, in pipeline
+    plt.savefig('predictions_oot/confusion_matrix.png')
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\pyplot.py", line 1119, in savefig
+    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\backend_bases.py", line 2193, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\backends\backend_agg.py", line 497, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\backends\backend_agg.py", line 446, in _print_pil
+    mpl.image.imsave(
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\image.py", line 1656, in imsave
+    image.save(fname, **pil_kwargs)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 2435, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'predictions_oot/confusion_matrix.png'
+
+2025-04-27 17:33:47 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:33:49 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-27 17:34:41 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:34:41 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:34:42 - ERROR - Error during run pipeline: module 'mlflow' has no attribute 'log_model'
+2025-04-27 17:34:42 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fp.py", line 45, in run_pipeline
+    mlflow.log_model(results["final_autoencoder"], "models/autoencoder")
+    ^^^^^^^^^^^^^^^^
+AttributeError: module 'mlflow' has no attribute 'log_model'
+
+2025-04-27 17:34:42 - ERROR - Error in setup: module 'mlflow' has no attribute 'log_model'
+2025-04-27 17:34:42 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fp.py", line 45, in run_pipeline
+    mlflow.log_model(results["final_autoencoder"], "models/autoencoder")
+    ^^^^^^^^^^^^^^^^
+AttributeError: module 'mlflow' has no attribute 'log_model'
+
+2025-04-27 17:37:04 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:37:07 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-27 17:37:58 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:37:58 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:38:23 - ERROR - Error during run pipeline: 'confusion_matrix'
+2025-04-27 17:38:23 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fp.py", line 53, in run_pipeline
+    "confusion_matrix": results['confusion_matrix'].tolist(),  # Convert to list for logging
+                        ~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'confusion_matrix'
+
+2025-04-27 17:38:23 - ERROR - Error in setup: 'confusion_matrix'
+2025-04-27 17:38:23 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fp.py", line 53, in run_pipeline
+    "confusion_matrix": results['confusion_matrix'].tolist(),  # Convert to list for logging
+                        ~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'confusion_matrix'
+
+2025-04-27 17:39:34 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:39:36 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-27 17:40:33 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:40:33 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:40:57 - ERROR - Error during run pipeline: float() argument must be a string or a real number, not 'list'
+2025-04-27 17:40:57 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fp.py", line 49, in run_pipeline
+    mlflow.log_metrics({
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 984, in log_metrics
+    return MlflowClient().log_batch(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2309, in log_batch
+    return self._tracking_client.log_batch(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 805, in log_batch
+    convert_metric_value_to_float_if_possible(metric.value),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\metric_value_conversion_utils.py", line 53, in convert_metric_value_to_float_if_possible
+    return float(x)
+           ^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'list'
+
+2025-04-27 17:40:57 - ERROR - Error in setup: float() argument must be a string or a real number, not 'list'
+2025-04-27 17:40:57 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fp.py", line 49, in run_pipeline
+    mlflow.log_metrics({
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 984, in log_metrics
+    return MlflowClient().log_batch(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2309, in log_batch
+    return self._tracking_client.log_batch(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 805, in log_batch
+    convert_metric_value_to_float_if_possible(metric.value),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\metric_value_conversion_utils.py", line 53, in convert_metric_value_to_float_if_possible
+    return float(x)
+           ^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'list'
+
+2025-04-27 17:42:39 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:42:41 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-27 17:43:32 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:43:32 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:43:57 - ERROR - Error during run pipeline: [Errno 2] No such file or directory: 'saved best models/encoder_model.csv'
+2025-04-27 17:43:57 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fp.py", line 66, in run_pipeline
+    mlflow.log_artifact("saved best models/encoder_model.csv", "models")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'saved best models/encoder_model.csv'
+
+2025-04-27 17:43:57 - ERROR - Error in setup: [Errno 2] No such file or directory: 'saved best models/encoder_model.csv'
+2025-04-27 17:43:57 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fp.py", line 66, in run_pipeline
+    mlflow.log_artifact("saved best models/encoder_model.csv", "models")
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\client.py", line 2374, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 926, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlflow\store\artifact\http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'saved best models/encoder_model.csv'
+
+2025-04-27 17:45:11 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:45:14 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-27 17:46:05 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:46:05 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:46:29 - INFO - Pipeline Run Successfully Completed
+2025-04-27 17:46:29 - INFO - F1 Score: 0.16260162601626016
+2025-04-27 17:56:31 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 17:56:34 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-27 17:57:25 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:57:25 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 17:57:50 - INFO - Pipeline Run Successfully Completed
+2025-04-27 17:57:50 - INFO - F1 Score: 0.08943089430894309
+2025-04-27 18:08:17 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-27 18:08:20 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-27 18:09:16 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 18:09:16 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-27 18:09:40 - INFO - Pipeline Run Successfully Completed
+2025-04-27 18:09:40 - INFO - F1 Score: 0.024390243902439025

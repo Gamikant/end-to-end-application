@@ -42,24 +42,30 @@ def run_pipeline():
                 # Run feature selection
                 results = pipeline(default_hyperparameters)
 
-                mlflow.log_model(results["final_autoencoder"], "models/autoencoder")
-                mlflow.log_model(results["reg_model"], "models/reg_model")
-                mlflow.log_model(results["final_encoder_trained"], "models/encoder")
+                mlflow.keras.log_model(results["final_autoencoder"], "models/autoencoder")
+                mlflow.keras.log_model(results["final_encoder_trained"], "models/encoder")
+                mlflow.sklearn.log_model(results["reg_model"], "models/reg_model")
 
                 mlflow.log_metrics({
                     "f1_score": results['f1'],
                     "precision_score": results['precision'],
-                    "recall_score": results['recall'],
-                    "confusion_matrix": results['confusion_matrix'].tolist(),  # Convert to list for logging
+                    "recall_score": results['recall']  # Convert to list for logging
                 })
 
                 mlflow.log_artifact("predictions/confusion_matrix.png", "predictions")
                 mlflow.log_artifact("predictions/predictions.csv", "predictions")
 
+                mlflow.log_artifact("input data/dev.csv", "datasets")
+                mlflow.log_artifact("input data/oos.csv", "datasets")
+                mlflow.log_artifact("input data/oot.csv", "datasets")
+
                 mlflow.log_artifact("encoded data/encoded_dev.csv", "encoded datasets")
                 mlflow.log_artifact("encoded data/encoded_oos.csv", "encoded datasets")
                 mlflow.log_artifact("encoded data/encoded_oot.csv", "encoded datasets")
-                
+
+                mlflow.log_artifact("saved best models/encoder_model.h5", "models")
+                mlflow.log_artifact("saved best models/autoencoder_model.h5", "models")
+                mlflow.log_artifact("saved best models/logistic_model.pkl", "models")
                 
                 # Log success status
                 mlflow.log_param("status", "SUCCESS")

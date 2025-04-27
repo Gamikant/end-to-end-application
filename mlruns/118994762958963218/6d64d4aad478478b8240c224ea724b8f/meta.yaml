@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/118994762958963218/6d64d4aad478478b8240c224ea724b8f/artifacts
+end_time: 1745756189781
+entry_point_name: ''
+experiment_id: '118994762958963218'
+lifecycle_stage: active
+run_id: 6d64d4aad478478b8240c224ea724b8f
+run_name: respected-perch-919
+run_uuid: 6d64d4aad478478b8240c224ea724b8f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745756114166
+status: 3
+tags: []
+user_id: prana

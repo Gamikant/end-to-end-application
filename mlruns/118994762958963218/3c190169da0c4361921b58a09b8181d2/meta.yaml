@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/118994762958963218/3c190169da0c4361921b58a09b8181d2/artifacts
+end_time: 1745756037239
+entry_point_name: ''
+experiment_id: '118994762958963218'
+lifecycle_stage: active
+run_id: 3c190169da0c4361921b58a09b8181d2
+run_name: mysterious-fawn-442
+run_uuid: 3c190169da0c4361921b58a09b8181d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745755961472
+status: 4
+tags: []
+user_id: prana

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/118994762958963218/eb36854b417d4dc1b873d3e2569fe70c/artifacts
+end_time: 1745755482029
+entry_point_name: ''
+experiment_id: '118994762958963218'
+lifecycle_stage: active
+run_id: eb36854b417d4dc1b873d3e2569fe70c
+run_name: clumsy-gnu-607
+run_uuid: eb36854b417d4dc1b873d3e2569fe70c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745755429785
+status: 4
+tags: []
+user_id: prana

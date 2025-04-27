@@ -1,6 +1,7 @@
-# Feature Selection Pipeline
+# Feature Selection + Fraud Detection Pipeline
 
 This pipeline performs feature selection using autoencoders on financial transaction data, with both fraud and non-fraud cases handled separately. The pipeline uses MLflow for experiment tracking and DVC for data version control.
+It then drops those features and runs the main fraud detection pipeline.
 
 ## Prerequisites
 
@@ -73,6 +74,9 @@ Example configuration:
         "epochs": 10,
         "batch_size": 32
         // ... other parameters
+    },
+    "model": {
+        // ... all parameters
     }
 }
 ```
@@ -88,13 +92,21 @@ mlflow ui --port 5000
 ```bash
 python run_fs.py
 ```
+3. In the same terminal after feature selection, run the fraud detection pipeline:
+```bash
+python run_fp.py
+```
 
 3. View results:
 - MLflow UI: http://localhost:5000
 - Check generated files in:
   - `feature_selection/` - Feature importance scores
   - `figures/` - Visualizations
-  - `feature_selection.log` - Execution logs
+  - `saved best models/` - All fraud detection pipeline models saved here
+  - `encoded data/` - Dataset encoded using encoder
+  - `predictions/` - Predictions on test data
+  - `feature_selection.log` - Execution logs for feature selection process
+  - `fraud_pipeline.log` - Excecution logs for fraud detection pipeline
 
 ## Output Files
 
@@ -102,6 +114,10 @@ The pipeline generates:
 - Feature importance scores (CSV)
 - Feature importance visualizations
 - Autoencoder training history plots
+- Autoencoder & Encoder model files
+- Logistic Regression model files
+- Prediction files
+- Encoded data
 - List of dropped features
 - Detailed logs
 
@@ -134,12 +150,18 @@ Application/
 ├── input_data/            # Input data files
 ├── feature_selection/     # Generated results
 ├── figures/              # Generated plots
-├── run_fs.py            # Main script
+├── encoded data/         # Data encoded by encoder
+├── predictions/          # Predictions on test data
+├── save best models/     # All final pipeline models stored here
+├── model.py              # Regression model utilities
+├── run_fp.py            # Main script for Part 2
+├── run_fs.py            # Main script for Part 1
 ├── pipeline.py          # Pipeline implementation
 ├── feature_selection.py # Feature selection logic
 ├── autoencoder.py      # Autoencoder model
 ├── prepare_data.py     # Data preparation
 └── mlflow_utils.py     # MLflow utilities
+
 ```
 
 ## Troubleshooting
