@@ -9,14 +9,15 @@ const cleanRoutes = require('./routes/cleanRoutes');
 
 const app = express();
 
-// const upload = multer({ dest: 'uploads/' });
-
 // Middleware order is critical
 app.use(cors({
   origin: 'http://localhost:3000',
   methods: ['POST', 'GET', 'PUT'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Database Connection
 mongoose.connect(config.mongoURI, {
@@ -29,26 +30,14 @@ mongoose.connect(config.mongoURI, {
 
 app.use(require('./middleware/logger'));
 
+// Error Handling
+app.use(errorHandler);
+
 // Routes
 app.use('/api/models', modelRoutes);
 app.use('/api/clean', cleanRoutes);
-
-// Error Handling
-app.use(errorHandler);
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// // Clean endpoint
-// app.post('/api/clean', upload.single('testData'), (req, res) => {
-//   // Add your data cleaning logic here
-//   res.sendFile('cleaned-data.csv', { root: __dirname });
-// });
-
-// // Predict endpoint
-// app.post('/api/predict', upload.single('cleanedTestData'), (req, res) => {
-//   // Add your prediction logic here
-//   res.json({ predictions: [/* sample data */] });
-// });
+app.use('/api', modelRoutes);
+app.use('/mlflow-artifacts', modelRoutes);
 
 // After routes
 app.use((err, req, res, next) => {

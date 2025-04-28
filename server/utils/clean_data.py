@@ -25,7 +25,7 @@ def main(input_path, output_path, file_ext=None):
         # KNN Imputation
         imputer = KNNImputer(n_neighbors=3)
         df_imputed = df.copy()
-        
+
         if numeric_cols:
             df_imputed[numeric_cols] = pd.DataFrame(
                 imputer.fit_transform(df[numeric_cols]),

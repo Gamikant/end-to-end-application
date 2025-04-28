@@ -1,0 +1,32 @@
+{
+  "train_file": "/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/cleaned_train.csv",
+  "validation_file": "/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv",
+  "test_file": "/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/cleaned_test.csv",
+  "target_column": "Class",
+  "train_on": "normal",
+  "feature_selection": "fpi",
+  "feature_threshold": 0.1,
+  "model_threshold": 0,
+  "model": "LogisticRegression",
+  "cross_validation": 5,
+  "autoencoder": {
+    "ratios": [
+      0.8,
+      0.5,
+      0.2
+    ],
+    "epochs": 10,
+    "batch_size": 32,
+    "dropout": 0.1,
+    "hidden_activation": "selu",
+    "optimizer": "adam",
+    "loss": "mse"
+  },
+  "model_params": {
+    "C": 0.01,
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "max_iter": 200,
+    "random_state": 42
+  }
+}

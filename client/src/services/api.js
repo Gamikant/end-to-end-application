@@ -13,6 +13,22 @@ export const cleanData = (formData) =>
     responseType: 'blob'
   });
 
+export const trainAndPredict = (formData) => 
+  axios.post(`${API_BASE}/train-predict`, formData, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  });
+  
+export const ShowArtifacts = (runId) => 
+  axios.get(`/api/runs/${runId}/artifacts`);
 
+export const getRunFigures = (runId) => 
+  axios.get(`${API_BASE}/runs/${runId}/artifacts/figures`);
 
-export const trainAndPredict = (formData) => api.post('/train-predict', formData);
+export const getFeaturesDropped = (runId) => 
+  axios.get(`${API_BASE}/runs/${runId}/artifacts/features-dropped`);
+
+export const getConfusionMatrix = (runId) => 
+  axios.get(`${API_BASE}/runs/${runId}/artifacts/predictions/confusion_matrix.png`);
+
+export const getRunMetrics = (runId) =>
+  axios.get(`/api/runs/${runId}/metrics`);

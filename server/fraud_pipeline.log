@@ -1,0 +1,881 @@
+2025-04-28 11:42:17 - ERROR - Error in setup: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+2025-04-28 11:42:17 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 22, in run_pipeline
+    with open('default_hyperparameters.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+
+2025-04-28 11:45:13 - ERROR - Error in setup: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+2025-04-28 11:45:13 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 22, in run_pipeline
+    with open('default_hyperparameters.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+
+2025-04-28 11:48:00 - ERROR - Error in setup: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+2025-04-28 11:48:00 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 22, in run_pipeline
+    with open('default_hyperparameters.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+
+2025-04-28 11:52:56 - ERROR - Error in setup: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+2025-04-28 11:52:56 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 22, in run_pipeline
+    with open('default_hyperparameters.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+
+2025-04-28 11:55:15 - ERROR - Error in setup: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+2025-04-28 11:55:15 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 22, in run_pipeline
+    with open('default_hyperparameters.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+
+2025-04-28 11:56:38 - ERROR - Error in setup: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+2025-04-28 11:56:38 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 22, in run_pipeline
+    with open('default_hyperparameters.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'default_hyperparameters.json'
+
+2025-04-28 11:59:03 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/0d8132c50a33c83d790fdfe8bab51abb', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/645ee51417c5433d279d6a7dd45d6af8', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 11:59:03 - WARNING - Retrying (Retry(total=6, connect=6, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e13961430>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 11:59:08 - WARNING - Retrying (Retry(total=5, connect=5, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e13976100>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 11:59:16 - WARNING - Retrying (Retry(total=4, connect=4, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e139761f0>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 11:59:33 - WARNING - Retrying (Retry(total=3, connect=3, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e13976b50>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 12:00:06 - WARNING - Retrying (Retry(total=2, connect=2, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e13976be0>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 12:01:11 - WARNING - Retrying (Retry(total=1, connect=1, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e13976a60>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 12:03:11 - WARNING - Retrying (Retry(total=0, connect=0, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e13976d30>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 12:03:11 - ERROR - Error in setup: API request to http://localhost:5001/api/2.0/mlflow/experiments/get-by-name failed with exception HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e13976400>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-04-28 12:03:11 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connection.py", line 445, in request
+    self.endheaders()
+  File "/home/bhanu/anaconda3/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/bhanu/anaconda3/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/home/bhanu/anaconda3/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connection.py", line 276, in connect
+    self.sock = self._new_conn()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x724e13976400>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+  [Previous line repeated 4 more times]
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e13976400>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/utils/rest_utils.py", line 184, in http_request
+    return _get_http_response_with_retries(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/utils/request_utils.py", line 237, in _get_http_response_with_retries
+    return session.request(method, url, allow_redirects=allow_redirects, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e13976400>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 30, in run_pipeline
+    init_mlflow("Fraud_Pipeline")
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/mlflow_utils.py", line 10, in init_mlflow
+    experiment = mlflow.get_experiment_by_name(experiment_name)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/fluent.py", line 1678, in get_experiment_by_name
+    return MlflowClient().get_experiment_by_name(name)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/client.py", line 1703, in get_experiment_by_name
+    return self._tracking_client.get_experiment_by_name(name)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/_tracking_service/client.py", line 591, in get_experiment_by_name
+    return self.store.get_experiment_by_name(name)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/store/tracking/rest_store.py", line 641, in get_experiment_by_name
+    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/store/tracking/rest_store.py", line 90, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/utils/rest_utils.py", line 397, in call_endpoint
+    response = http_request(**call_kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/utils/rest_utils.py", line 207, in http_request
+    raise MlflowException(f"API request to {url} failed with exception {e}")
+mlflow.exceptions.MlflowException: API request to http://localhost:5001/api/2.0/mlflow/experiments/get-by-name failed with exception HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x724e13976400>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+2025-04-28 12:06:15 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/77ee69b39e4fcde33b88cd4a08b8d19c', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/494b061c6865516991128b1c02b4d7b1', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:06:15 - WARNING - Retrying (Retry(total=6, connect=6, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b779a41a30>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 12:06:19 - WARNING - Retrying (Retry(total=5, connect=5, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b779a54130>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 12:06:28 - WARNING - Retrying (Retry(total=4, connect=4, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b779a54220>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 12:06:44 - WARNING - Retrying (Retry(total=3, connect=3, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b779a54b80>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 12:07:16 - WARNING - Retrying (Retry(total=2, connect=2, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b779a54c10>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 12:08:21 - WARNING - Retrying (Retry(total=1, connect=1, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x74b779a54b20>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 12:10:31 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/fe7118358b284076eb15d8f0a85bdbee', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/4041e5ee069702caf38c006e7d6d7384', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:10:31 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:10:54 - ERROR - Error during run pipeline: Cannot save file into a non-existent directory: '../artifacts/c10247411eb24b07a1ff848cc53cdaed/encoded data'
+2025-04-28 12:10:54 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 161, in pipeline
+    encoded_dev.to_csv(f'../artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/c10247411eb24b07a1ff848cc53cdaed/encoded data'
+
+2025-04-28 12:10:54 - ERROR - Error in setup: Cannot save file into a non-existent directory: '../artifacts/c10247411eb24b07a1ff848cc53cdaed/encoded data'
+2025-04-28 12:10:54 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 161, in pipeline
+    encoded_dev.to_csv(f'../artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/c10247411eb24b07a1ff848cc53cdaed/encoded data'
+
+2025-04-28 12:16:52 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/7cd8274fbbd687a2c4701c6dde911c05', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/352a5cf39fa49e860ebf233ed542682d', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:16:52 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:16:53 - ERROR - Error during run pipeline: log() missing 1 required positional argument: 'msg'
+2025-04-28 12:16:53 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 106, in pipeline
+    pipeline_logger.log("-------------------------------------------------")
+TypeError: log() missing 1 required positional argument: 'msg'
+
+2025-04-28 12:16:53 - ERROR - Error in setup: log() missing 1 required positional argument: 'msg'
+2025-04-28 12:16:53 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 106, in pipeline
+    pipeline_logger.log("-------------------------------------------------")
+TypeError: log() missing 1 required positional argument: 'msg'
+
+2025-04-28 12:20:02 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/590362300346e850b668954fae02e020', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/6b807e41b5892e6e74459349a8a9d3a0', 'target_column': 'Class', 'drop_features': 'no', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0.5, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:20:02 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:20:24 - ERROR - Error during run pipeline: Cannot save file into a non-existent directory: '../artifacts/e5a6a0e74bed4dce8ff91fed2edf2617/encoded data'
+2025-04-28 12:20:24 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 176, in pipeline
+    encoded_dev.to_csv(f'../artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/e5a6a0e74bed4dce8ff91fed2edf2617/encoded data'
+
+2025-04-28 12:20:24 - ERROR - Error in setup: Cannot save file into a non-existent directory: '../artifacts/e5a6a0e74bed4dce8ff91fed2edf2617/encoded data'
+2025-04-28 12:20:24 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 176, in pipeline
+    encoded_dev.to_csv(f'../artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/e5a6a0e74bed4dce8ff91fed2edf2617/encoded data'
+
+2025-04-28 12:23:27 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/779d1cb66dead014a69ec87de96a1644', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/311b3e8145825f7d5ebcdcd05dfe0426', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:23:27 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:23:52 - ERROR - Error during run pipeline: Cannot save file into a non-existent directory: '../artifacts/bd1b7b7ac13a4b89887cea8bf191d892/encoded data'
+2025-04-28 12:23:52 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 176, in pipeline
+    encoded_dev.to_csv(f'../artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/bd1b7b7ac13a4b89887cea8bf191d892/encoded data'
+
+2025-04-28 12:23:52 - ERROR - Error in setup: Cannot save file into a non-existent directory: '../artifacts/bd1b7b7ac13a4b89887cea8bf191d892/encoded data'
+2025-04-28 12:23:52 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 176, in pipeline
+    encoded_dev.to_csv(f'../artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/bd1b7b7ac13a4b89887cea8bf191d892/encoded data'
+
+2025-04-28 12:34:35 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/39f7f4dae458e17699d2a1d78d3989e8', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/39a5f4e812d202bb81978ebf6ed8f5e5', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:34:35 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:35:00 - ERROR - Error during run pipeline: Cannot save file into a non-existent directory: '../artifacts/a9cd5fd9cd264e319e421a2abc5d6c5d/encoded data'
+2025-04-28 12:35:00 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 177, in pipeline
+    encoded_dev.to_csv(f'../artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/a9cd5fd9cd264e319e421a2abc5d6c5d/encoded data'
+
+2025-04-28 12:35:00 - ERROR - Error in setup: Cannot save file into a non-existent directory: '../artifacts/a9cd5fd9cd264e319e421a2abc5d6c5d/encoded data'
+2025-04-28 12:35:00 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 177, in pipeline
+    encoded_dev.to_csv(f'../artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/a9cd5fd9cd264e319e421a2abc5d6c5d/encoded data'
+
+2025-04-28 12:36:52 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/f06e0a033e687be7be1ae8ca0a651a42', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/9275be66e280c36a27a2745c97c728a8', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:36:52 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:37:17 - ERROR - Error during run pipeline: Cannot save file into a non-existent directory: 'artifacts/1f4789d4d224416b9a9d3e519dc20487/encoded data'
+2025-04-28 12:37:17 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 177, in pipeline
+    encoded_dev.to_csv(f'artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'artifacts/1f4789d4d224416b9a9d3e519dc20487/encoded data'
+
+2025-04-28 12:37:17 - ERROR - Error in setup: Cannot save file into a non-existent directory: 'artifacts/1f4789d4d224416b9a9d3e519dc20487/encoded data'
+2025-04-28 12:37:17 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 177, in pipeline
+    encoded_dev.to_csv(f'artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'artifacts/1f4789d4d224416b9a9d3e519dc20487/encoded data'
+
+2025-04-28 12:41:30 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/039588e7d7a86652184d0ee3b754b453', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/829d5a202d35400b6f9178dcc51a3ac7', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:41:30 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:41:54 - ERROR - Error during run pipeline: Cannot save file into a non-existent directory: '../artifacts/e5a4fc6fbe264b9ead6aab90d9c2bae7/encoded data'
+2025-04-28 12:41:54 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 179, in pipeline
+    encoded_dev.to_csv(f'../artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/e5a4fc6fbe264b9ead6aab90d9c2bae7/encoded data'
+
+2025-04-28 12:41:54 - ERROR - Error in setup: Cannot save file into a non-existent directory: '../artifacts/e5a4fc6fbe264b9ead6aab90d9c2bae7/encoded data'
+2025-04-28 12:41:54 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 179, in pipeline
+    encoded_dev.to_csv(f'../artifacts/{run_id}/encoded data/encoded_dev.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/e5a4fc6fbe264b9ead6aab90d9c2bae7/encoded data'
+
+2025-04-28 12:44:03 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/42e1903e557d5249a78c8cba20a8b77c', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/967fb375464c6b81c6672a795fa761d0', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:44:04 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:44:33 - ERROR - Error during run pipeline: Cannot save file into a non-existent directory: '../artifacts/1a0402f28a574e9986ec99fb71fca901/predictions'
+2025-04-28 12:44:33 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 189, in pipeline
+    reg_model, f1, precision, recall, confusion_mat, predictions_df = train_model(encoded_train.drop(columns=encoded_train.columns[-1]),
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/model.py", line 35, in train_model
+    predictions_df.to_csv(f'../artifacts/{run_id}/predictions/predictions.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/1a0402f28a574e9986ec99fb71fca901/predictions'
+
+2025-04-28 12:44:33 - ERROR - Error in setup: Cannot save file into a non-existent directory: '../artifacts/1a0402f28a574e9986ec99fb71fca901/predictions'
+2025-04-28 12:44:33 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 189, in pipeline
+    reg_model, f1, precision, recall, confusion_mat, predictions_df = train_model(encoded_train.drop(columns=encoded_train.columns[-1]),
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/model.py", line 35, in train_model
+    predictions_df.to_csv(f'../artifacts/{run_id}/predictions/predictions.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/1a0402f28a574e9986ec99fb71fca901/predictions'
+
+2025-04-28 12:46:29 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/79a7e3ede0c054468ddd882b494daad7', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/7f6228eb43c43b9d23da0ed3f695d108', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:46:29 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:46:55 - ERROR - Error during run pipeline: Cannot save file into a non-existent directory: '../artifacts/bacfc0978bc34d99b171a6678e9f8ec4/predictions'
+2025-04-28 12:46:55 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 189, in pipeline
+    reg_model, f1, precision, recall, confusion_mat, predictions_df = train_model(encoded_train.drop(columns=encoded_train.columns[-1]),
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/model.py", line 35, in train_model
+    predictions_df.to_csv(f'../artifacts/{run_id}/predictions/predictions.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/bacfc0978bc34d99b171a6678e9f8ec4/predictions'
+
+2025-04-28 12:46:55 - ERROR - Error in setup: Cannot save file into a non-existent directory: '../artifacts/bacfc0978bc34d99b171a6678e9f8ec4/predictions'
+2025-04-28 12:46:55 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 45, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 189, in pipeline
+    reg_model, f1, precision, recall, confusion_mat, predictions_df = train_model(encoded_train.drop(columns=encoded_train.columns[-1]),
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/model.py", line 35, in train_model
+    predictions_df.to_csv(f'../artifacts/{run_id}/predictions/predictions.csv', index=False)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '../artifacts/bacfc0978bc34d99b171a6678e9f8ec4/predictions'
+
+2025-04-28 12:49:16 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/76845d80bf3a90264e9c4348cd910fde', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/b94a60a5927fabbf05abc61f768ea650', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:49:16 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:49:44 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 12:49:44 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 12:50:01 - ERROR - Error during run pipeline: [Errno 2] No such file or directory: 'predictions/predictions.csv'
+2025-04-28 12:50:01 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 58, in run_pipeline
+    mlflow.log_artifact(f"predictions/predictions.csv", "predictions")
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/client.py", line 2379, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/_tracking_service/client.py", line 931, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/store/artifact/http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'predictions/predictions.csv'
+
+2025-04-28 12:50:01 - ERROR - Error in setup: [Errno 2] No such file or directory: 'predictions/predictions.csv'
+2025-04-28 12:50:01 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 58, in run_pipeline
+    mlflow.log_artifact(f"predictions/predictions.csv", "predictions")
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/client.py", line 2379, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/_tracking_service/client.py", line 931, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/store/artifact/http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'predictions/predictions.csv'
+
+2025-04-28 12:53:43 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/db2bfb39f0d8b3792271fb248a871f90', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/b932b9264308531dd70a23d67209bbaa', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 12:53:43 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 12:54:13 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 12:54:13 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 12:54:30 - ERROR - Error during run pipeline: [Errno 2] No such file or directory: 'input data/dev.csv'
+2025-04-28 12:54:30 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 60, in run_pipeline
+    mlflow.log_artifact("input data/dev.csv", "datasets")
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/client.py", line 2379, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/_tracking_service/client.py", line 931, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/store/artifact/http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'input data/dev.csv'
+
+2025-04-28 12:54:30 - ERROR - Error in setup: [Errno 2] No such file or directory: 'input data/dev.csv'
+2025-04-28 12:54:30 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 60, in run_pipeline
+    mlflow.log_artifact("input data/dev.csv", "datasets")
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/fluent.py", line 1179, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/client.py", line 2379, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/_tracking_service/client.py", line 931, in log_artifact
+    artifact_repo.log_artifact(local_path, artifact_path)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/store/artifact/http_artifact_repo.py", line 62, in log_artifact
+    with open(local_file, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'input data/dev.csv'
+
+2025-04-28 13:03:06 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/c0a316b708d3d9b28e0c40e89a6660ab', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/fae4f696668cb5ae5b4adebd86bb66f7', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 13:03:06 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 13:03:33 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 13:03:33 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 13:03:50 - INFO - Pipeline Run Successfully Completed
+2025-04-28 13:03:50 - INFO - F1 Score: 0.6991869918699187
+2025-04-28 13:14:49 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/23cc1336399f38590d11a8a967619661', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/7f25156e3d0d8e82ef46abba4024d99e', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 13:14:49 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 13:15:40 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 13:15:40 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 13:16:36 - INFO - Pipeline Run Successfully Completed
+2025-04-28 13:16:36 - INFO - F1 Score: 0.5203252032520326
+2025-04-28 13:21:35 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/fef0fda353fccce6a201f7e70e3249c8', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/046af58aff36817b13dd5a131319c9fe', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 13:21:35 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 13:22:07 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 13:22:07 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 13:22:29 - INFO - Pipeline Run Successfully Completed
+2025-04-28 13:22:29 - INFO - F1 Score: 0.5142857142857142
+2025-04-28 13:27:43 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/3309c1490039c399d86c2cc3bf48ffb9', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/bfeec038376f6943a30164d6d281eb3b', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 13:27:43 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 13:29:25 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/a78babfac01665e2fa93a9d8174d88fd', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/1d209db9cccdb092f22f328a90eff79c', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 13:29:25 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 13:30:05 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 13:30:05 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 13:30:24 - INFO - Pipeline Run Successfully Completed
+2025-04-28 13:30:24 - INFO - F1 Score: 0.5853658536585366
+2025-04-28 14:04:40 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/53e8197b0a887dcc818db68d21e75151', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/b2094e75aaebb35716b9d2d9a4d7d92e', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 14:04:40 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 14:05:27 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 14:05:27 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 14:05:55 - INFO - Pipeline Run Successfully Completed
+2025-04-28 14:05:55 - INFO - F1 Score: 0.6097560975609756
+2025-04-28 14:09:52 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/1a712472482160a3e842f1e48d379ddb', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/302e4f1117e7577e9b71b764e4c9d092', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 14:09:52 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 14:10:21 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 14:10:21 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 14:10:42 - INFO - Pipeline Run Successfully Completed
+2025-04-28 14:10:42 - INFO - F1 Score: 0.5365853658536586
+2025-04-28 19:43:10 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/ae7b9efed5f1e12a59c0bc5c8ebfaf62', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/24eaa6856a79f1d07fe150045653a543', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 19:43:10 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 19:43:48 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 19:43:48 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 19:44:08 - INFO - Pipeline Run Successfully Completed
+2025-04-28 19:44:08 - INFO - F1 Score: 0.44715447154471544
+2025-04-28 19:53:55 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/4245c601022ac6dbaadf00775fb1c503', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/77625166aae47d3bfdff547897dc4871', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 19:53:55 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 19:54:22 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 19:54:23 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 19:54:43 - INFO - Pipeline Run Successfully Completed
+2025-04-28 19:54:43 - INFO - F1 Score: 0.5528455284552846
+2025-04-28 19:56:02 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/eec6784b3e2aa0dd1af9d08825350d57', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/e765a650cca97328ad217028932a03ca', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 19:56:02 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 19:56:35 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 19:56:35 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 19:57:04 - INFO - Pipeline Run Successfully Completed
+2025-04-28 19:57:04 - INFO - F1 Score: 0.5365853658536586
+2025-04-28 19:58:09 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/e90a5e13e9d6d00595cb481236af4c1c', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/883d3c20339a9e42ae14c77895e5c6c5', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 19:58:09 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 19:58:50 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 19:58:50 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 19:59:17 - INFO - Pipeline Run Successfully Completed
+2025-04-28 19:59:17 - INFO - F1 Score: 0.5934959349593496
+2025-04-28 20:02:27 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/ada9373ae9b1d5c862c37b699e851300', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/4f8548193ff3089860183e6c3c9ef306', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 20:02:27 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 20:02:56 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 20:02:56 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 20:05:24 - INFO - Pipeline Run Successfully Completed
+2025-04-28 20:05:24 - INFO - F1 Score: 0.18699186991869918
+2025-04-28 20:07:04 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/959b874a06800d6e04afddbf46f7d463', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/d1adc10a8ea4228ab0bb55a985c69a47', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 20:07:04 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 20:07:33 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 20:07:33 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 20:07:53 - INFO - Pipeline Run Successfully Completed
+2025-04-28 20:07:53 - INFO - F1 Score: 0.6585365853658537
+2025-04-28 20:09:52 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/995c44eb0f758e1401dddf9757305193', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/692da814b973fa4e37799ea0e3390d3a', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 20:09:52 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 20:10:27 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 20:10:27 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 20:10:49 - INFO - Pipeline Run Successfully Completed
+2025-04-28 20:10:49 - INFO - F1 Score: 0.6016260162601627
+2025-04-28 20:13:25 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/884b6839b2eed9adf8e57950485f77e1', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/95fad926d29cb8bc3ac1ac128cccbc75', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 20:13:26 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 20:13:53 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 20:13:53 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 20:14:13 - INFO - Pipeline Run Successfully Completed
+2025-04-28 20:14:13 - INFO - F1 Score: 0.4715447154471545
+2025-04-28 20:20:22 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/b5bdbaf134ccd5176d095a73fe460758', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/2cc343f74d6db8ed343f33ac42568312', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 20:20:22 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 20:21:07 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/9ab9625a77be0fca94eb947f8c182bfd', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/943a9983e9e2e1f061412f7007cc7f9b', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 20:21:07 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 20:21:34 - ERROR - Error during run pipeline: fit() got an unexpected keyword argument 'verbose'
+2025-04-28 20:21:34 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 50, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 198, in pipeline
+    reg_model, f1, precision, recall, confusion_mat, predictions_df = train_model(encoded_train.drop(columns=encoded_train.columns[-1]),
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/model.py", line 18, in train_model
+    model.fit(X_train, y_train, verbose = 0)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+TypeError: fit() got an unexpected keyword argument 'verbose'
+
+2025-04-28 20:21:34 - ERROR - Error in setup: fit() got an unexpected keyword argument 'verbose'
+2025-04-28 20:21:34 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 50, in run_pipeline
+    results = pipeline(default_hyperparameters, run.info.run_id)
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/pipeline.py", line 198, in pipeline
+    reg_model, f1, precision, recall, confusion_mat, predictions_df = train_model(encoded_train.drop(columns=encoded_train.columns[-1]),
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/model.py", line 18, in train_model
+    model.fit(X_train, y_train, verbose = 0)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+TypeError: fit() got an unexpected keyword argument 'verbose'
+
+2025-04-28 20:23:26 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/4c2cedb76d7ebb38e5b221cd8f50ce74', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/2729f32086180b9d45851cfdf403b44c', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 20:23:26 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 20:23:55 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 20:23:55 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 20:25:34 - INFO - Pipeline Run Successfully Completed
+2025-04-28 20:25:34 - INFO - F1 Score: 0.7317073170731707
+2025-04-28 23:14:25 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/4cf2d387f88929aec9fe5749a603a9b4', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/d84983311a170d006a10646cf013d719', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:14:25 - WARNING - Retrying (Retry(total=6, connect=6, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3a6a60>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 23:14:30 - WARNING - Retrying (Retry(total=5, connect=5, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3bb160>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 23:14:38 - WARNING - Retrying (Retry(total=4, connect=4, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3bb250>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 23:14:55 - WARNING - Retrying (Retry(total=3, connect=3, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3bb040>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 23:15:28 - WARNING - Retrying (Retry(total=2, connect=2, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3bbcd0>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 23:16:33 - WARNING - Retrying (Retry(total=1, connect=1, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3bb580>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 23:18:33 - WARNING - Retrying (Retry(total=0, connect=0, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3bba90>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline
+2025-04-28 23:18:33 - ERROR - Error in setup: API request to http://localhost:5001/api/2.0/mlflow/experiments/get-by-name failed with exception HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3bb520>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-04-28 23:18:33 - ERROR - Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connection.py", line 445, in request
+    self.endheaders()
+  File "/home/bhanu/anaconda3/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/bhanu/anaconda3/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/home/bhanu/anaconda3/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connection.py", line 276, in connect
+    self.sock = self._new_conn()
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x76ab5c3bb520>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+  [Previous line repeated 4 more times]
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3bb520>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/utils/rest_utils.py", line 184, in http_request
+    return _get_http_response_with_retries(
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/utils/request_utils.py", line 237, in _get_http_response_with_retries
+    return session.request(method, url, allow_redirects=allow_redirects, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3bb520>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/run_fp.py", line 35, in run_pipeline
+    init_mlflow("Fraud_Pipeline")
+  File "/home/bhanu/IITM/Courses/MLOps/devops-project/server/scripts/mlflow_utils.py", line 10, in init_mlflow
+    experiment = mlflow.get_experiment_by_name(experiment_name)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/fluent.py", line 1678, in get_experiment_by_name
+    return MlflowClient().get_experiment_by_name(name)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/client.py", line 1703, in get_experiment_by_name
+    return self._tracking_client.get_experiment_by_name(name)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/tracking/_tracking_service/client.py", line 591, in get_experiment_by_name
+    return self.store.get_experiment_by_name(name)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/store/tracking/rest_store.py", line 641, in get_experiment_by_name
+    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/store/tracking/rest_store.py", line 90, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/utils/rest_utils.py", line 397, in call_endpoint
+    response = http_request(**call_kwargs)
+  File "/home/bhanu/IITM/Courses/MLOps/Feature-Selection/venv/lib/python3.9/site-packages/mlflow/utils/rest_utils.py", line 207, in http_request
+    raise MlflowException(f"API request to {url} failed with exception {e}")
+mlflow.exceptions.MlflowException: API request to http://localhost:5001/api/2.0/mlflow/experiments/get-by-name failed with exception HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=Fraud_Pipeline (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x76ab5c3bb520>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+2025-04-28 23:20:19 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/fd6948259122c37ff91e3b6cc175420c', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/3ad648f40b2b76bf26cef0eb2f86202a', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:20:20 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:20:52 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:20:52 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:21:10 - INFO - Pipeline Run Successfully Completed
+2025-04-28 23:21:10 - INFO - F1 Score: 0.5040650406504065
+2025-04-28 23:30:22 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/935867c8bd3c873721536329321cca9f', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/314198517a2fac174edea283e7279153', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:30:23 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:30:58 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:30:58 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:31:20 - INFO - Pipeline Run Successfully Completed
+2025-04-28 23:31:20 - INFO - F1 Score: 0.5447154471544715
+2025-04-28 23:32:24 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/9d38cef71710070eb6b73093dc3f1938', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/b035c94fd28188de6f23446a7e2ec749', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:32:25 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:32:53 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:32:53 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:33:10 - INFO - Pipeline Run Successfully Completed
+2025-04-28 23:33:10 - INFO - F1 Score: 0.5203252032520326
+2025-04-28 23:34:47 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/dec206f81a1429baa9a16d6df840eff3', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/3ffda4f0489173993b7be1cf5db1b0e8', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:34:47 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:35:15 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:35:15 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:35:31 - INFO - Pipeline Run Successfully Completed
+2025-04-28 23:35:31 - INFO - F1 Score: 0.6666666666666666
+2025-04-28 23:36:40 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/bac2c8ae7ef3fc2d3785e45db3ad4f7a', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/a89ab4726e7e4ac405119fceaab6d6a2', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:36:41 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:37:15 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:37:15 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:37:34 - INFO - Pipeline Run Successfully Completed
+2025-04-28 23:37:34 - INFO - F1 Score: 0.4634146341463415
+2025-04-28 23:46:21 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/7f57db374eeac507daf8a4efcc1c6568', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/57fb0e691c3456c3820cc133ce942354', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:46:22 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:46:48 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:46:48 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:47:04 - INFO - Pipeline Run Successfully Completed
+2025-04-28 23:47:04 - INFO - F1 Score: 0.6341463414634146
+2025-04-28 23:49:10 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/832ea23578f4eef6877b40babbaccd19', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/753ae0c6d77f8fddd218c212885ac52f', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:49:11 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:49:45 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:49:45 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:50:11 - INFO - Pipeline Run Successfully Completed
+2025-04-28 23:50:11 - INFO - F1 Score: 0.5365853658536586
+2025-04-28 23:50:58 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/bd01396d2b7960e73c4830a88044144b', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/ebd70fa183f6924641af6c34c73ea939', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:50:58 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:51:34 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:51:34 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:51:55 - INFO - Pipeline Run Successfully Completed
+2025-04-28 23:51:55 - INFO - F1 Score: 0.6829268292682927
+2025-04-28 23:54:49 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/570dfd548e1dda954925a22f1a893690', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/4a27e2e7cfa25813b2c02916a749adad', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:54:49 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:55:18 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:55:18 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:55:36 - INFO - Pipeline Run Successfully Completed
+2025-04-28 23:55:36 - INFO - F1 Score: 0.6829268292682927
+2025-04-28 23:57:11 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/5fd8efa494c979bef2d6036cc28c33fb', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/ed29d212c632f8a12782712ecad09ccb', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:57:11 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:57:42 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:57:42 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:58:02 - INFO - Pipeline Run Successfully Completed
+2025-04-28 23:58:02 - INFO - F1 Score: 0.6504065040650406
+2025-04-28 23:59:20 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/f48cef5db6abff7d8aab12d5a33a9725', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/b16517fd89c239a971c8b1275a474816', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-28 23:59:20 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-28 23:59:49 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-28 23:59:49 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 00:00:08 - INFO - Pipeline Run Successfully Completed
+2025-04-29 00:00:08 - INFO - F1 Score: 0.6178861788617886
+2025-04-29 00:01:23 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/a2d23c8681bef4e97ef858cf13977b17', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/9838ae8e25ef3f3aeae22ddaffa137de', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-29 00:01:23 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-29 00:01:51 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 00:01:51 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 00:02:08 - INFO - Pipeline Run Successfully Completed
+2025-04-29 00:02:08 - INFO - F1 Score: 0.6829268292682927
+2025-04-29 00:11:57 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/953830cf58e558e44944cf26978a06a1', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/9fdfb45e5795e6ddf81bd69233287b23', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-29 00:11:57 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-29 00:12:23 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 00:12:24 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 00:12:42 - INFO - Pipeline Run Successfully Completed
+2025-04-29 00:12:42 - INFO - F1 Score: 0.4959349593495935
+2025-04-29 01:24:38 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/cleaned_train.csv', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/cleaned_test.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-29 01:24:38 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-29 01:25:10 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 01:25:10 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 01:25:27 - INFO - Pipeline Run Successfully Completed
+2025-04-29 01:25:27 - INFO - F1 Score: 0.5121951219512195
+2025-04-29 01:28:37 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/cleaned_train.csv', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/cleaned_test.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-29 01:28:37 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-29 01:29:14 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 01:29:14 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 01:29:34 - INFO - Pipeline Run Successfully Completed
+2025-04-29 01:29:34 - INFO - F1 Score: 0.5786618444846293
+2025-04-29 02:04:28 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/cleaned_train.csv', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/cleaned_test.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-29 02:04:28 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-29 02:05:01 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 02:05:01 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 02:05:21 - INFO - Pipeline Run Successfully Completed
+2025-04-29 02:05:21 - INFO - F1 Score: 0.6422764227642277
+2025-04-29 02:09:58 - INFO - Default parameters: {'train_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/cleaned_train.csv', 'validation_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/validation.csv', 'test_file': '/home/bhanu/IITM/Courses/MLOps/devops-project/server/uploads/cleaned_test.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-29 02:09:58 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-29 02:10:49 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 02:10:49 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 02:11:21 - INFO - Pipeline Run Successfully Completed
+2025-04-29 02:11:21 - INFO - F1 Score: 0.5609756097560976
