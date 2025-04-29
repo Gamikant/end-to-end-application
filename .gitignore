@@ -1,1 +1,5 @@
 /input data
+Dockerfile
+docker-compose.yml
+entrypoint.sh
+.dockerignore

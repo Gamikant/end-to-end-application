@@ -487,3 +487,22 @@ TypeError: must be real number, not str
 2025-04-27 18:01:07 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
 2025-04-27 18:01:10 - INFO - Running initial feature selection using default parameters
 2025-04-27 18:04:16 - INFO - Feature selection completed. Dropped features: ['V1', 'V4', 'V9', 'V21', 'V26', 'Amount']
+2025-04-29 17:28:14 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 'fpi', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-29 17:28:17 - INFO - Running initial feature selection using default parameters
+2025-04-29 17:31:00 - ERROR - Error during feature selection: 'autoencoder_F_history'
+2025-04-29 17:31:00 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 59, in run_feature_selection
+    mlflow.log_metric("fraud_autoencoder_final_loss", results["autoencoder_F_history"].history['loss'][-1])
+                                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'autoencoder_F_history'
+
+2025-04-29 17:31:00 - ERROR - Error in setup: 'autoencoder_F_history'
+2025-04-29 17:31:00 - ERROR - Traceback (most recent call last):
+  File "C:\Users\prana\OneDrive\Desktop\Application\run_fs.py", line 59, in run_feature_selection
+    mlflow.log_metric("fraud_autoencoder_final_loss", results["autoencoder_F_history"].history['loss'][-1])
+                                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'autoencoder_F_history'
+
+2025-04-29 17:35:47 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 're', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-29 17:35:50 - INFO - Running initial feature selection using default parameters
+2025-04-29 17:37:07 - INFO - Feature selection completed. Dropped features: ['V23', 'V28']

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/272429960426513867/f6d587be37dd4353a7cf1c755d41fe6f/artifacts
+end_time: 1745928427224
+entry_point_name: ''
+experiment_id: '272429960426513867'
+lifecycle_stage: active
+run_id: f6d587be37dd4353a7cf1c755d41fe6f
+run_name: adventurous-fox-3
+run_uuid: f6d587be37dd4353a7cf1c755d41fe6f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745928350019
+status: 3
+tags: []
+user_id: prana

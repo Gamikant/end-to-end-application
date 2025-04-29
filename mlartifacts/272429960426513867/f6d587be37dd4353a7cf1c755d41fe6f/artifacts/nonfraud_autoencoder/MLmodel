@@ -1,0 +1,19 @@
+artifact_path: nonfraud_autoencoder
+flavors:
+  keras:
+    data: data
+    keras_backend: tensorflow
+    keras_version: 3.5.0
+    save_exported_model: false
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.keras
+    python_version: 3.12.1
+mlflow_version: 2.21.3
+model_size_bytes: 71012
+model_uuid: 10b20f3a10f949cf82f44f541a66fde9
+prompts: null
+run_id: f6d587be37dd4353a7cf1c755d41fe6f
+utc_time_created: '2025-04-29 12:06:56.520522'

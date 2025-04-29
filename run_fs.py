@@ -6,7 +6,7 @@ from pipeline import *
 from feature_selection import *
 from prepare_data import *
 from autoencoder import *
-from mlflow_utils import init_mlflow, log_metrics_and_artifacts
+from mlflow_utils import *
 
 # Configure logging
 logging.basicConfig(
@@ -44,21 +44,64 @@ def run_feature_selection():
                 method = default_hyperparameters['feature_selection']
                 
                 # Log all metrics and artifacts
-                log_metrics_and_artifacts(
-                    results['importance_scores_normal'],
-                    results['importance_scores_abnormal'],
-                    results['feature_names'],
-                    method,
-                    results['features_dropped'],
-                    results['history_F'],
-                    results['history_NF'],
-                    ['figures/normal_'+method+'_importance.png', 'figures/abnormal_'+method+'_importance.png'],
-                    results['autoencoder_F'],
-                    results['autoencoder_NF'],
-                    results['dev'],
-                    results['oos'],
-                    results['oot']
-                )
+                mlflow.keras.log_model(results["autoencoder_F"], "fraud_autoencoder")
+                mlflow.keras.log_model(results["autoencoder_NF"], "nonfraud_autoencoder")
+                
+                # Log datasets
+                mlflow.log_artifact("input data/dev.csv", "datasets")
+                mlflow.log_artifact("input data/oos.csv", "datasets")
+                mlflow.log_artifact("input data/oot.csv", "datasets")
+
+                mlflow.log_artifact('feature selection/abnormal_'+method+'_importance.csv', "feature_importance")
+                mlflow.log_artifact('feature selection/normal_'+method+'_importance.csv', "feature_importance")
+            
+                # Log fraud autoencoder training metrics
+                mlflow.log_metric("fraud_autoencoder_final_loss", results["history_F"].history['loss'][-1])
+                mlflow.log_metric("fraud_autoencoder_final_val_loss", results["history_F"].history['val_loss'][-1])
+                
+                # Log non-fraud autoencoder training metrics
+                mlflow.log_metric("nonfraud_autoencoder_final_loss", results["history_NF"].history['loss'][-1])
+                mlflow.log_metric("nonfraud_autoencoder_final_val_loss", results["history_NF"].history['val_loss'][-1])
+                
+                # Log training curves for both autoencoders
+                import matplotlib.pyplot as plt
+                
+                # Plot fraud autoencoder loss
+                plt.figure(figsize=(10, 6))
+                plt.plot(results["history_F"].history['loss'], label='Training Loss')
+                plt.plot(results["history_F"].history['val_loss'], label='Validation Loss')
+                plt.title('Fraud Autoencoder Training History')
+                plt.xlabel('Epoch')
+                plt.ylabel('Loss')
+                plt.legend()
+                plt.savefig('figures/fraud_autoencoder_loss.png')
+                plt.close()
+                
+                # Plot non-fraud autoencoder loss
+                plt.figure(figsize=(10, 6))
+                plt.plot(results["history_NF"].history['loss'], label='Training Loss')
+                plt.plot(results["history_NF"].history['val_loss'], label='Validation Loss')
+                plt.title('Non-Fraud Autoencoder Training History')
+                plt.xlabel('Epoch')
+                plt.ylabel('Loss')
+                plt.legend()
+                plt.savefig('figures/nonfraud_autoencoder_loss.png')
+                plt.close()
+                
+                # Log number of features dropped
+                mlflow.log_metric("num_features_dropped", len(results["features_dropped"]))
+                
+                figure_paths = ['figures/normal_'+method+'_importance.png', 
+                                'figures/abnormal_'+method+'_importance.png',
+                                'figures/fraud_autoencoder_loss.png',
+                                'figures/nonfraud_autoencoder_loss.png']
+                
+                for fig_path in figure_paths:
+                    mlflow.log_artifact(fig_path, "important figures")
+                
+                # Log feature selection results
+                with open("feature selection/features_dropped.txt", "r") as f:
+                    mlflow.log_text(f.read(), "features_dropped.txt")
                 
                 # Log success status
                 mlflow.log_param("status", "SUCCESS")

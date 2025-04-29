@@ -4,7 +4,7 @@
     "test_file": "input data/oot.csv",
     "target_column": "Class",
     "train_on": "normal",
-    "feature_selection": "fpi",
+    "feature_selection": "re",
     "feature_threshold": 0.1,
     "model_threshold": 0,
     "model": "LogisticRegression",

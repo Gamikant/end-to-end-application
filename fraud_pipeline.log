@@ -186,3 +186,9 @@ FileNotFoundError: [Errno 2] No such file or directory: 'saved best models/encod
 2025-04-27 18:09:16 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
 2025-04-27 18:09:40 - INFO - Pipeline Run Successfully Completed
 2025-04-27 18:09:40 - INFO - F1 Score: 0.024390243902439025
+2025-04-29 17:42:05 - INFO - Default parameters: {'train_file': 'input data/dev.csv', 'validation_file': 'input data/oos.csv', 'test_file': 'input data/oot.csv', 'target_column': 'Class', 'train_on': 'normal', 'feature_selection': 're', 'feature_threshold': 0.1, 'model_threshold': 0, 'model': 'LogisticRegression', 'cross_validation': 5, 'autoencoder': {'ratios': [0.8, 0.5, 0.2], 'epochs': 10, 'batch_size': 32, 'dropout': 0.1, 'hidden_activation': 'selu', 'optimizer': 'adam', 'loss': 'mse'}, 'model_params': {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 200, 'random_state': 42}}
+2025-04-29 17:42:08 - INFO - Running the final pipeline with default parameters and dropped features
+2025-04-29 17:43:10 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 17:43:10 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-29 17:43:35 - INFO - Pipeline Run Successfully Completed
+2025-04-29 17:43:35 - INFO - F1 Score: 0.24390243902439024

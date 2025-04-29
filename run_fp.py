@@ -6,7 +6,7 @@ from pipeline import *
 from feature_selection import *
 from prepare_data import *
 from autoencoder import *
-from mlflow_utils import init_mlflow, log_metrics_and_artifacts
+from mlflow_utils import *
 
 # Configure logging
 logging.basicConfig(
