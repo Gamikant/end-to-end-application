@@ -681,3 +681,189 @@ tr:hover {
   }
 }
 
+/* Add to your existing CSS */
+.pdf-viewer {
+  margin: 2rem 0;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  background: white;
+}
+
+.pdf-page {
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pdf-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.pdf-controls button {
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pdf-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.test-results-summary {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subsection {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.metric-label {
+  display: block;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2b2d42;
+}
+
+.fraud-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-item {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+}
+
+.stat-label {
+  color: #495057;
+  margin-right: 0.5rem;
+}
+
+.stat-value {
+  font-weight: 600;
+  color: #2b2d42;
+}
+
+.fraud-table-container {
+  margin-top: 1.5rem;
+}
+
+.table-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.fraud-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fraud-table th,
+.fraud-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.fraud-table th {
+  background: #f8f9fa;
+  position: sticky;
+  top: 0;
+}
+
+.previous-runs-header {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.run-id-input-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.run-id-input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  width: 300px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.fetch-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fetch-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.run-tabs {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.tab-button {
+  padding: 0.5rem 1.5rem;
+  background: #e9ecef;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  background: #dee2e6;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 0.5rem;
+}

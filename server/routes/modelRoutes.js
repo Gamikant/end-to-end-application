@@ -2,12 +2,9 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const modelController = require('../controllers/modelController');
-const { MlflowClient } = require('mlflow');
 const path = require('path');
 const fs = require('fs');
 const upload = multer({ dest: 'uploads/' });
-
-router.post('/predict', upload.single('file'), modelController.predict);
 
 router.post('/train-predict', upload.fields([
     { name: 'trainData', maxCount: 1 },
@@ -73,6 +70,27 @@ router.get('/runs/:runId/artifacts/features-dropped', (req, res) => {
   });
 });
 
+router.get('/runs/:runId/metrics', (req, res) => {
+  const runId = req.params.runId;
+  const filePath = path.join(
+    __dirname, 
+    '../results', 
+    `${runId}.json`
+  );
+  
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      return res.status(404).json({ error: 'Metrics file not found' });
+    }
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    } catch (parseErr) {
+      res.status(500).json({ error: 'Failed to parse metrics file' });
+    }
+  });
+});
+
 router.get('/runs/:runId/artifacts/predictions/:filename', (req, res) => {
   const runId = req.params.runId;
   const filePath = path.join(
@@ -87,7 +105,5 @@ router.get('/runs/:runId/artifacts/predictions/:filename', (req, res) => {
     if (err) res.status(404).json({ error: 'Confusion matrix not found' });
   });
 });
-
-
 
 module.exports = router;

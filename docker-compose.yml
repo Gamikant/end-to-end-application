@@ -1,28 +1,41 @@
-version: '3'
+version: '3.8'
 
 services:
-  spark:
-    image: bitnami/spark:3.3
-    ports:
-      - '7077:7077'
-      - '8080:8080'
-    volumes:
-      - ./data:/data
-
   mlflow:
-    image: mlflow:latest
+    image: ghcr.io/mlflow/mlflow
+    container_name: mlflow_server
+    command: mlflow ui --host 0.0.0.0 --port 5001
     ports:
-      - '5000:5000'
-    environment:
-      - MLFLOW_TRACKING_URI=http://mlflow:5000
-      - MLFLOW_ARTIFACT_ROOT=/mlflow
-
-  mongodb:
-    image: mongo:6.0
-    ports:
-      - '27017:27017'
+      - "5001:5001"
     volumes:
-      - mongodb_data:/data/db
+      - ./mlruns:/mlruns
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"  # Host:Container port mapping
+    volumes:
+      - mongo_data:/data/db  # Uses named volume
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+      - "5000:5000"
+    volumes:
+      # Local DVC remote storage
+      - ./dvc-storage:/dvc-storage
+      # DVC cache (persisted between builds)
+      - dvc-cache:/app/.dvc/cache
+      # Data directories (optional)
+      - ./server/uploads:/app/server/uploads
+      - ./server/artifacts:/app/server/artifacts
+      - ./server/results:/app/server/results
+    depends_on:
+      - db  # Ensures MongoDB starts first
+      - mlflow
+    environment:
+      - MONGO_URI=mongodb://db:27017/mlflow-tracker  # Use service name "db"
+      - MLFLOW_TRACKING_URI=http://mlflow:5001
 
 volumes:
-  mongodb_data:
+  dvc-cache:
+  mongo_data:

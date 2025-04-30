@@ -19,7 +19,7 @@ def fs(default_hyperparameters, run_id):
     pipeline_logger.setLevel(logging.WARNING)
 
     # Create file handler
-    handler = logging.FileHandler('feature_selection.log')
+    handler = logging.FileHandler('./logs/feature_selection.log')
     handler.setFormatter(logging.Formatter(
         '%(asctime)s - %(levelname)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
@@ -104,7 +104,7 @@ def pipeline(hyperparameters, run_id):
     pipeline_logger.setLevel(logging.WARNING)
 
     # Create file handler
-    handler = logging.FileHandler('feature_selection.log')
+    handler = logging.FileHandler('./logs/feature_selection.log')
     handler.setFormatter(logging.Formatter(
         '%(asctime)s - %(levelname)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'

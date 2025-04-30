@@ -31,7 +31,7 @@ const RightModel = () => {
 
   return (
     <div className="model-card trainable-model">
-      <h2>Trainable Regression Model</h2>
+      <h2>Trainable Fraud Model</h2>
       <div className="file-group">
         <div className="file-upload">
           <label>

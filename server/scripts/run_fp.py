@@ -18,7 +18,7 @@ os.environ['KERAS_VERBOSE'] = '0'
 
 # Configure logging
 logging.basicConfig(
-    filename='fraud_pipeline.log',
+    filename='./logs/fraud_pipeline.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
@@ -80,10 +80,27 @@ def run_pipeline(config_path):
                 
                 logging.info(f"Pipeline Run Successfully Completed")
                 logging.info(f"F1 Score: {results['f1']}")
+
+                prediction_df = results['predictions_df']
+                count_ones = prediction_df['Predictions'].sum()
+        
+                # Get row numbers (indexes) where prediction is 1
+                fraud_indices = prediction_df[prediction_df['Predictions'] == 1].index.tolist()
+                
+                # Convert to 1-based indexing if needed
+                row_numbers = [i+1 for i in fraud_indices]  # Remove +1 if you want 0-based indexes
+                
                 os.system('cls' if os.name == 'nt' else 'clear')
                 return {
                     "status": "success",
-                    "mlflow_run_id": run.info.run_id
+                    "mlflow_run_id": run.info.run_id,
+                    "f1_score": results['f1'],
+                    "precision_score": results['precision'],
+                    "recall_score": results['recall'],
+                    "fraud_count": int(count_ones),
+                    "fraud_rows": row_numbers,
+                    "total_predictions": len(prediction_df),
+                    "fraud_percentage": round((count_ones/len(prediction_df))*100, 2)
                 }
             except Exception as e:
                 logging.error(f"Error during run pipeline: {str(e)}")
@@ -118,6 +135,6 @@ if __name__ == "__main__":
         result = run_pipeline(args.config)
         print(json.dumps(result))
         sys.stdout.flush()
-    except Exception:
+    except Exception as e:
         print(json.dumps({"status": "error", "message": str(e)}))
         exit(1)

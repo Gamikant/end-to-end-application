@@ -15,7 +15,7 @@ const GlobalHeader = () => {
           to="/" 
           className={({ isActive }) => `header-link ${isActive ? 'active' : ''}`}
         >
-          <span className="header-logo">ML Platform</span>
+          <span className="header-logo">Fraud Detection ML Platform</span>
         </NavLink>
         <div className="header-tabs">
           <NavLink 
@@ -23,6 +23,12 @@ const GlobalHeader = () => {
             className={({ isActive }) => `header-link ${isActive ? 'active' : ''}`}
           >
             Model Details
+          </NavLink>
+          <NavLink
+            to="/previous-runs"
+            className={({ isActive }) => `header-link ${isActive ? 'active' : ''}`}
+          >
+            Previous Runs
           </NavLink>
           <NavLink
             to={currentRunId ? `/runs/${currentRunId}/features` : "/runs/features"}

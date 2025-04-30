@@ -5,8 +5,11 @@ const path = require('path');
 const util = require('util');
 const unlink = util.promisify(require('fs').unlink);
 const fs = require('fs').promises; // Use promise API
-
 const MLFLOW_TRACKING_URI = 'http://localhost:5000/api/2.0/mlflow';
+// Add at the top of modelController.js
+const client = require('prom-client');
+const register = new client.Registry();
+const { execSync } = require('child_process');
 
 exports.predict = async (req, res) => {
   try {
@@ -60,6 +63,30 @@ exports.predict = async (req, res) => {
     });
   }
 };
+
+async function logToDVCLogger(message) {
+  const logPath = path.join(__dirname, '../logs/dvc.logger'); // Adjust path as needed
+  const timestamp = new Date().toISOString();
+  await fs.appendFile(logPath, `[${timestamp}] ${message}\n`);
+}
+
+async function trackWithDVC() {
+  try {
+    // Track results directory
+    execSync('dvc add results', { stdio: 'inherit' });
+    await logToDVCLogger('DVC add results successful');
+    execSync('dvc add artifacts', { stdio: 'inherit' });
+    await logToDVCLogger('DVC add artifacts successful');
+    execSync('dvc add uploads', { stdio: 'inherit' });
+    await logToDVCLogger('DVC add uploads successful');
+    await logToDVCLogger('Successfully tracked with DVC');
+    console.log('Successfully tracked with DVC');
+  } catch (error) {
+    const errMsg = `DVC tracking failed: ${error.message || error}`;
+    console.error('DVC tracking failed:', error);
+    await logToDVCLogger(errMsg);
+  }
+}
 
 exports.trainAndPredict = async (req, res) => {
   if (!req.files?.trainData || !req.files?.testData) {
@@ -192,6 +219,12 @@ except Exception as e:
       featureSelection: featureSelectionResult,
       finalPipeline: finalPipelineResult
     };
+
+    const resultsDir = path.join(__dirname, '..', 'results');
+    await fs.mkdir(resultsDir, { recursive: true });
+    const resultPath = path.join(resultsDir, `${combinedResult.featureSelection.mlflow_run_id}.json`);
+    await fs.writeFile(resultPath, JSON.stringify(combinedResult, null, 2));
+    await trackWithDVC();
 
     res.json(combinedResult);
   } catch (error) {

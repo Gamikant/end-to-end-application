@@ -1,27 +1,9 @@
-// // src/App.js
-// import { Routes, Route } from 'react-router-dom';
-// import Home from './components/Home';
-// import ModelSpecs from './components/ModelSpecs';
-// import RunDetails from './components/RunDetails'
-
-// function App() {
-//   return (
-//     <Routes>
-//       <Route path="/" element={<Home />} />
-//       <Route path="/specs" element={<ModelSpecs />} />
-//       <Route path="/runs/:runId" element={<RunDetails />} />
-//       <Route path="/runs/:runId/*" element={<RunDetails />} />
-//     </Routes>
-//   );
-// }
-
-// export default App;
-
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import ModelSpecs from './components/ModelSpecs';
 import RunDetails from './components/RunDetails';
 import GlobalHeader from './components/GlobalHeader';
+import PreviousRunsHeader from './components/PreviousRunsHeader';
 
 function App() {
   return (
@@ -32,6 +14,7 @@ function App() {
         <Route path="/specs" element={<ModelSpecs />} />
         {/* These will render RunDetails which handles /features and /results */}
         <Route path="/runs/:runId/*" element={<RunDetails />} />
+        <Route path="/previous-runs" element={<PreviousRunsHeader />} />
         {/* If someone tries to go directly to features/results without runId, show error */}
         <Route path="/runs/features" element={<InvalidRun />} />
         <Route path="/runs/results" element={<InvalidRun />} />

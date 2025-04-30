@@ -28,9 +28,6 @@ def train_model(X_train, y_train, X_test, y_test, model_type, params, threshold,
     else:
         y_pred = model.predict(X_test)
 
-    # Saving csv file of predictions on test data
-    if not os.path.exists('predictions'):
-        os.makedirs('predictions')
     predictions_df = pd.DataFrame({'Predictions': y_pred})
     predictions_df.to_csv(f'artifacts/{run_id}/predictions/predictions.csv', index=False)
     

@@ -1,5 +1,5 @@
 module.exports = {
-    mongoURI: 'mongodb://localhost:27017/mlflow-tracker',
-    sparkMaster: 'spark://localhost:7077'
+    mongoURI: 'mongodb://db:27017/mlflow-tracker',
+    sparkMaster: 'spark://db:7077'
   };
   

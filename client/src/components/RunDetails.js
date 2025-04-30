@@ -67,9 +67,65 @@ const FeatureSelectionDetails = ({ loading, features, artifacts, runId }) => {
 
 // --- Test Results Tab: show confusion matrix image ---
 // src/components/RunDetails.js
+// const TestResultsDetails = () => {
+//   const location = useLocation();
+//   const [confusionMatrixUrl, setConfusionMatrixUrl] = useState(null);
+//   const [loading, setLoading] = useState(true);
+//   const [error, setError] = useState('');
+//   const params = new URLSearchParams(location.search);
+//   const fraudRunId = params.get('fraudRunId');
+//   const API_BASE = 'http://localhost:5000/api';
+
+//   useEffect(() => {
+//     if (!fraudRunId) {
+//       setError('No Fraud Detection Run ID found.');
+//       setLoading(false);
+//       return;
+//     }
+//     setLoading(true);
+//     fetch(`${API_BASE}/runs/${fraudRunId}/artifacts/predictions/confusion_matrix.png`)
+//       .then(response => {
+//         if (!response.ok) throw new Error('Confusion matrix not found');
+//         return response.blob();
+//       })
+//       .then(blob => {
+//         setConfusionMatrixUrl(URL.createObjectURL(blob));
+//         setError('');
+//       })
+//       .catch(err => {
+//         setError('Error fetching confusion matrix.');
+//         setConfusionMatrixUrl(null);
+//       })
+//       .finally(() => setLoading(false));
+//   }, [fraudRunId]);
+
+//   return (
+//     <section className="test-results-summary">
+//       <h3>Test Results</h3>
+//       {loading ? (
+//         <div>Loading confusion matrix...</div>
+//       ) : error ? (
+//         <div style={{ color: 'red' }}>{error}</div>
+//       ) : confusionMatrixUrl ? (
+//         <div style={{ textAlign: 'center' }}>
+//           <img
+//             src={confusionMatrixUrl}
+//             alt="Confusion Matrix"
+//             style={{ maxWidth: '600px', margin: '20px 0' }}
+//           />
+//         </div>
+//       ) : (
+//         <div>No confusion matrix available</div>
+//       )}
+//     </section>
+//   );
+// };
+
 const TestResultsDetails = () => {
-  const location = useLocation();
+  const { runId } = useParams();
+  // const location = useLocation();
   const [confusionMatrixUrl, setConfusionMatrixUrl] = useState(null);
+  const [metrics, setMetrics] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const params = new URLSearchParams(location.search);
@@ -77,50 +133,111 @@ const TestResultsDetails = () => {
   const API_BASE = 'http://localhost:5000/api';
 
   useEffect(() => {
-    if (!fraudRunId) {
+    if (!runId) {
       setError('No Fraud Detection Run ID found.');
       setLoading(false);
       return;
     }
+
     setLoading(true);
+    
+    // Fetch metrics
+    fetch(`${API_BASE}/runs/${runId}/metrics`)
+      .then(response => response.json())
+      .then(data => setMetrics(data.finalPipeline))
+      .catch(err => setError('Error fetching metrics'));
+
+    // Fetch confusion matrix
     fetch(`${API_BASE}/runs/${fraudRunId}/artifacts/predictions/confusion_matrix.png`)
       .then(response => {
         if (!response.ok) throw new Error('Confusion matrix not found');
         return response.blob();
       })
-      .then(blob => {
-        setConfusionMatrixUrl(URL.createObjectURL(blob));
-        setError('');
-      })
-      .catch(err => {
-        setError('Error fetching confusion matrix.');
-        setConfusionMatrixUrl(null);
-      })
+      .then(blob => setConfusionMatrixUrl(URL.createObjectURL(blob)))
+      .catch(err => setError('Error fetching confusion matrix'))
       .finally(() => setLoading(false));
   }, [fraudRunId]);
 
   return (
     <section className="test-results-summary">
-      <h3>Test Results</h3>
-      {loading ? (
-        <div>Loading confusion matrix...</div>
-      ) : error ? (
-        <div style={{ color: 'red' }}>{error}</div>
-      ) : confusionMatrixUrl ? (
-        <div style={{ textAlign: 'center' }}>
-          <img
-            src={confusionMatrixUrl}
-            alt="Confusion Matrix"
-            style={{ maxWidth: '600px', margin: '20px 0' }}
-          />
-        </div>
-      ) : (
-        <div>No confusion matrix available</div>
+      <h2>Fraud Detection Results</h2>
+      
+      {loading && <div>Loading results...</div>}
+      {error && <div className="error-message">{error}</div>}
+
+      {metrics && (
+        <>
+          {/* Training Summary Section */}
+          <div className="subsection">
+            <h3>Training Summary</h3>
+            <div className="metrics-grid">
+              <div className="metric-card">
+                <span className="metric-label">F1 Score</span>
+                <span className="metric-value">{metrics.f1_score.toFixed(2)}</span>
+              </div>
+              <div className="metric-card">
+                <span className="metric-label">Precision</span>
+                <span className="metric-value">{metrics.precision_score.toFixed(2)}</span>
+              </div>
+              <div className="metric-card">
+                <span className="metric-label">Recall</span>
+                <span className="metric-value">{metrics.recall_score.toFixed(2)}</span>
+              </div>
+            </div>
+            
+            {confusionMatrixUrl && (
+              <div className="confusion-matrix">
+                <h4>Confusion Matrix</h4>
+                <img 
+                  src={confusionMatrixUrl} 
+                  alt="Confusion Matrix"
+                  style={{ maxWidth: '600px', marginTop: '1rem' }}
+                />
+              </div>
+            )}
+          </div>
+
+          {/* Test Results Section */}
+          <div className="subsection">
+            <h3>Test Results</h3>
+            <div className="fraud-stats">
+              <div className="stat-item">
+                <span className="stat-label">Fraud Cases Detected:</span>
+                <span className="stat-value">{metrics.fraud_count}</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-label">Fraud Percentage:</span>
+                <span className="stat-value">{(metrics.fraud_percentage * 100).toFixed(2)}%</span>
+              </div>
+            </div>
+
+            <div className="fraud-table-container">
+              <h4>Fraudulent Transactions</h4>
+              <div className="table-scroll">
+                <table className="fraud-table">
+                  <thead>
+                    <tr>
+                      <th>Row Number</th>
+                      <th>Transaction ID</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {metrics.fraud_rows.map((row, index) => (
+                      <tr key={index}>
+                        <td>{row}</td>
+                        <td>TX-{row.toString().padStart(5, '0')}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </>
       )}
     </section>
   );
 };
-
 
 
 const RunDetails = () => {

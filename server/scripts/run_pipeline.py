@@ -23,7 +23,7 @@ import io
 
 # Configure logging
 logging.basicConfig(
-    filename='feature_selection.log',
+    filename='./logs/feature_selection.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'

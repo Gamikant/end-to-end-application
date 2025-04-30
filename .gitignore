@@ -3,6 +3,10 @@ client/node_modules/
 server/node_modules/
 server/uploads/
 server/data/
-server/artifacts/
+server/logs/
+server/artifacts/ 
+server/results/
+dvc-storage/
 mlartifacts/
 mlruns/
+mlflow/

@@ -1,0 +1,16 @@
+node_modules/
+.dvc/
+mlartifacts/
+mlruns/
+server/node_modules/
+client/node_modules/
+server/results/
+server/artifacts/
+server/uploads/
+server/logs/
+server/data/
+server/scripts/__pycache__/
+server/artifacts.dvc
+server/results.dvc
+server/uploads.dvc
+.git
