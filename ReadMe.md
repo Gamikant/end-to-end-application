@@ -79,9 +79,11 @@ docker-compose up --build
 
 ---
 
-## API Endpoints
+## Guides & Documentation
 
+See [User Manual](docs/User-Manual.pdf) for full details for running the website.
 See [Low Level Design Document](docs/Low-Level-Design.pdf) for full API details.
+See [High Level Design Document](docs/High-Level-Design.pdf) for full structure.
 
 ---
 
